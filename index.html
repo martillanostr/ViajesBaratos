@@ -426,24 +426,7 @@
           <i data-lucide="lightbulb" style="width:16px;height:16px"></i>
         </a>
       </div>
-      <!-- BUSCADOR -->
-      <div style="margin-top:32px;background:white;border-radius:20px;padding:20px;box-shadow:0 8px 32px rgba(26,26,46,0.1)">
-        <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#6b7280;margin-bottom:12px">🔍 Busca tu vuelo barato</div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">
-          <div>
-            <label style="font-size:0.75rem;font-weight:600;color:#6b7280;display:block;margin-bottom:4px">Origen</label>
-            <input id="origen" type="text" placeholder="Madrid" style="width:100%;padding:10px 14px;border:1.5px solid rgba(26,26,46,0.12);border-radius:12px;font-family:'DM Sans',sans-serif;font-size:0.9rem;outline:none;color:#1a1a2e">
-          </div>
-          <div>
-            <label style="font-size:0.75rem;font-weight:600;color:#6b7280;display:block;margin-bottom:4px">Destino</label>
-            <input id="destino" type="text" placeholder="Lisboa" style="width:100%;padding:10px 14px;border:1.5px solid rgba(26,26,46,0.12);border-radius:12px;font-family:'DM Sans',sans-serif;font-size:0.9rem;outline:none;color:#1a1a2e">
-          </div>
-        </div>
-        <button onclick="buscarVuelo()" style="width:100%;background:#1a1a2e;color:white;border:none;cursor:pointer;padding:12px;border-radius:12px;font-family:'DM Sans',sans-serif;font-weight:700;font-size:0.9rem;transition:all 0.2s" onmouseover="this.style.background='#f4a623';this.style.color='#1a1a2e'" onmouseout="this.style.background='#1a1a2e';this.style.color='white'">
-          ✈️ Buscar vuelos baratos
-        </button>
-      </div>
-      <div class="hero-stats">
+            <div class="hero-stats">
         <div>
           <div class="hero-stat-num">50+</div>
           <div class="hero-stat-label">Destinos analizados</div>
@@ -949,10 +932,7 @@
   lucide.createIcons();
 
   function buscarVuelo() {
-    const destino = document.getElementById('destino').value.trim();
-    const origen = document.getElementById('origen').value.trim();
-    const base = 'https://www.skyscanner.es/vuelos-baratos';
-    window.open(base + '?associateid=531013', '_blank');
+    window.open('https://www.skyscanner.es', '_blank');
   }
 
   function toggleMenu() {
