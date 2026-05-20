@@ -465,7 +465,7 @@
         <div style="font-size:0.8rem;font-weight:600;color:#f43f5e">desde 34€ ✈</div>
       </div>
       <div class="hero-card-main">
-        <div style="width:100%;height:260px;background:url(https://picsum.photos/seed/cancun/800/600) center/cover no-repeat"></div>
+        <div style="width:100%;height:260px;background:linear-gradient(135deg,#0891b2,#06b6d4,#67e8f9);display:flex;align-items:center;justify-content:center;font-size:80px">🏖️</div>
         <div class="hero-card-body">
           <div class="hero-card-tag">
             <i data-lucide="trending-down" style="width:12px;height:12px"></i>
@@ -526,7 +526,7 @@
         <div class="destino-badge">MÁS BARATO</div>
       </div></a>
       <a href="https://www.skyscanner.es/vuelos/mad/rak/" target="_blank" rel="noopener" style="text-decoration:none"><div class="destino-card">
-        <div style="position:absolute;inset:0;background:url(https://picsum.photos/seed/marrakech/800/600) center/cover no-repeat"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(160deg,#7c2d00,#c2410c,#ea580c);display:flex;align-items:center;justify-content:center;font-size:64px">🕌</div>
         <div class="destino-overlay"></div>
         <div class="destino-info">
           <div class="destino-name">Marrakech</div>
@@ -534,7 +534,7 @@
         </div>
       </div></a>
       <a href="https://www.skyscanner.es/vuelos/mad/krk/" target="_blank" rel="noopener" style="text-decoration:none"><div class="destino-card">
-        <div style="position:absolute;inset:0;background:url(https://picsum.photos/seed/cracovia/800/600) center/cover no-repeat"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(160deg,#064e3b,#065f46,#047857);display:flex;align-items:center;justify-content:center;font-size:64px">🏰</div>
         <div class="destino-overlay"></div>
         <div class="destino-info">
           <div class="destino-name">Cracovia, Polonia</div>
@@ -543,7 +543,7 @@
         <div class="destino-badge" style="background:#10b981">TOP CULTURAL</div>
       </div></a>
       <a href="https://www.skyscanner.es/vuelos/mad/buh/" target="_blank" rel="noopener" style="text-decoration:none"><div class="destino-card">
-        <div style="position:absolute;inset:0;background:url(https://picsum.photos/seed/bucarest/800/600) center/cover no-repeat"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(160deg,#312e81,#4338ca,#6366f1);display:flex;align-items:center;justify-content:center;font-size:64px">🏙️</div>
         <div class="destino-overlay"></div>
         <div class="destino-info">
           <div class="destino-name">Bucarest, Rumanía</div>
@@ -551,7 +551,7 @@
         </div>
       </div></a>
       <a href="https://www.skyscanner.es/vuelos/mad/bud/" target="_blank" rel="noopener" style="text-decoration:none"><div class="destino-card">
-        <div style="position:absolute;inset:0;background:url(https://picsum.photos/seed/budapest/800/600) center/cover no-repeat"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(160deg,#7f1d1d,#991b1b,#dc2626);display:flex;align-items:center;justify-content:center;font-size:64px">🌉</div>
         <div class="destino-overlay"></div>
         <div class="destino-info">
           <div class="destino-name">Budapest, Hungría</div>
@@ -559,7 +559,7 @@
         </div>
       </div></a>
       <a href="https://www.skyscanner.es/vuelos/mad/prg/" target="_blank" rel="noopener" style="text-decoration:none"><div class="destino-card">
-        <div style="position:absolute;inset:0;background:url(https://picsum.photos/seed/praga/800/600) center/cover no-repeat"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(160deg,#0c4a6e,#0369a1,#0284c7);display:flex;align-items:center;justify-content:center;font-size:64px">⛪</div>
         <div class="destino-overlay"></div>
         <div class="destino-info">
           <div class="destino-name">Praga, Rep. Checa</div>
@@ -568,7 +568,7 @@
         <div class="destino-badge" style="background:#06b6d4">IMPRESCINDIBLE</div>
       </div></a>
       <a href="https://www.skyscanner.es/vuelos/mad/ath/" target="_blank" rel="noopener" style="text-decoration:none"><div class="destino-card">
-        <div style="position:absolute;inset:0;background:url(https://picsum.photos/seed/atenas/800/600) center/cover no-repeat"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(160deg,#713f12,#92400e,#b45309);display:flex;align-items:center;justify-content:center;font-size:64px">🏛️</div>
         <div class="destino-overlay"></div>
         <div class="destino-info">
           <div class="destino-name">Atenas, Grecia</div>
@@ -576,7 +576,7 @@
         </div>
       </div></a>
       <a href="https://www.skyscanner.es/vuelos/mad/waw/" target="_blank" rel="noopener" style="text-decoration:none"><div class="destino-card">
-        <div style="position:absolute;inset:0;background:url(https://picsum.photos/seed/varsovia/800/600) center/cover no-repeat"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(160deg,#1a1a2e,#16213e,#0f3460);display:flex;align-items:center;justify-content:center;font-size:64px">🏟️</div>
         <div class="destino-overlay"></div>
         <div class="destino-info">
           <div class="destino-name">Varsovia, Polonia</div>
@@ -949,12 +949,7 @@
   lucide.createIcons();
 
   function buscarVuelo() {
-    const origen = document.getElementById('origen').value || 'Madrid';
-    const destino = document.getElementById('destino').value || '';
-    const url = destino 
-      ? `https://www.skyscanner.es/vuelos/${encodeURIComponent(origen.toLowerCase())}/${encodeURIComponent(destino.toLowerCase())}/`
-      : `https://www.skyscanner.es/vuelos/${encodeURIComponent(origen.toLowerCase())}/`;
-    window.open(url, '_blank');
+    window.open('https://www.skyscanner.es/vuelos-baratos', '_blank');
   }
 
   function toggleMenu() {
