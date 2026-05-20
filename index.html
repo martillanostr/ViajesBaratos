@@ -179,10 +179,10 @@
     .destinos-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px; }
     .destino-card {
       border-radius: 20px; overflow: hidden; position: relative; cursor: pointer;
-      transition: transform 0.3s; aspect-ratio: 3/4;
+      transition: transform 0.3s; aspect-ratio: 3/4; min-height: 200px;
       box-shadow: 0 4px 16px rgba(26,26,46,0.08);
     }
-    .destino-card:first-child { grid-row: span 2; grid-column: span 1; aspect-ratio: auto; }
+    .destino-card:first-child { grid-row: span 2; grid-column: span 1; aspect-ratio: auto; min-height: 424px; }
     .destino-card:hover { transform: translateY(-6px); }
     .destino-img {
       width: 100%; height: 100%; object-fit: cover;
@@ -517,7 +517,7 @@
     <p class="section-desc">Destinos increíbles sin arruinarte. Precios medios por persona incluyendo vuelo y alojamiento.</p>
     <div class="destinos-grid">
       <a href="https://www.skyscanner.es/vuelos/mad/lis/" target="_blank" rel="noopener" style="text-decoration:none"><div class="destino-card">
-        <img src="https://picsum.photos/seed/lisboa/800/600" alt="Lisboa" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
+        <div style="position:absolute;inset:0;background:linear-gradient(160deg,#1e3a5f,#2d6a9f,#4a90c4);display:flex;align-items:center;justify-content:center;font-size:64px">🏛️</div>
         <div class="destino-overlay"></div>
         <div class="destino-info">
           <div class="destino-name">Lisboa, Portugal</div>
@@ -949,7 +949,9 @@
   lucide.createIcons();
 
   function buscarVuelo() {
-    window.open('https://www.skyscanner.es/vuelos-baratos', '_blank');
+    const origen = document.getElementById('origen').value.trim();
+    const destino = document.getElementById('destino').value.trim();
+    window.open('https://www.skyscanner.es/vuelos-baratos/?geo=' + encodeURIComponent(destino || origen), '_blank');
   }
 
   function toggleMenu() {
