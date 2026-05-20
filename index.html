@@ -949,9 +949,10 @@
   lucide.createIcons();
 
   function buscarVuelo() {
-    const origen = document.getElementById('origen').value.trim();
     const destino = document.getElementById('destino').value.trim();
-    window.open('https://www.skyscanner.es/vuelos-baratos/?geo=' + encodeURIComponent(destino || origen), '_blank');
+    const origen = document.getElementById('origen').value.trim();
+    const base = 'https://www.skyscanner.es/vuelos-baratos';
+    window.open(base + '?associateid=531013', '_blank');
   }
 
   function toggleMenu() {
