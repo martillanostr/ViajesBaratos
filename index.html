@@ -176,13 +176,13 @@
 
     /* DESTINOS */
     .destinos { background: var(--white); }
-    .destinos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+    .destinos-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px; }
     .destino-card {
       border-radius: 20px; overflow: hidden; position: relative; cursor: pointer;
       transition: transform 0.3s; aspect-ratio: 3/4;
       box-shadow: 0 4px 16px rgba(26,26,46,0.08);
     }
-    .destino-card:first-child { grid-row: span 2; aspect-ratio: auto; }
+    .destino-card:first-child { grid-row: span 2; grid-column: span 1; aspect-ratio: auto; }
     .destino-card:hover { transform: translateY(-6px); }
     .destino-img {
       width: 100%; height: 100%; object-fit: cover;
@@ -425,6 +425,23 @@
           <i data-lucide="lightbulb" style="width:16px;height:16px"></i>
         </a>
       </div>
+      <!-- BUSCADOR -->
+      <div style="margin-top:32px;background:white;border-radius:20px;padding:20px;box-shadow:0 8px 32px rgba(26,26,46,0.1)">
+        <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#6b7280;margin-bottom:12px">🔍 Busca tu vuelo barato</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">
+          <div>
+            <label style="font-size:0.75rem;font-weight:600;color:#6b7280;display:block;margin-bottom:4px">Origen</label>
+            <input id="origen" type="text" placeholder="Madrid" style="width:100%;padding:10px 14px;border:1.5px solid rgba(26,26,46,0.12);border-radius:12px;font-family:'DM Sans',sans-serif;font-size:0.9rem;outline:none;color:#1a1a2e">
+          </div>
+          <div>
+            <label style="font-size:0.75rem;font-weight:600;color:#6b7280;display:block;margin-bottom:4px">Destino</label>
+            <input id="destino" type="text" placeholder="Lisboa" style="width:100%;padding:10px 14px;border:1.5px solid rgba(26,26,46,0.12);border-radius:12px;font-family:'DM Sans',sans-serif;font-size:0.9rem;outline:none;color:#1a1a2e">
+          </div>
+        </div>
+        <button onclick="buscarVuelo()" style="width:100%;background:#1a1a2e;color:white;border:none;cursor:pointer;padding:12px;border-radius:12px;font-family:'DM Sans',sans-serif;font-weight:700;font-size:0.9rem;transition:all 0.2s" onmouseover="this.style.background='#f4a623';this.style.color='#1a1a2e'" onmouseout="this.style.background='#1a1a2e';this.style.color='white'">
+          ✈️ Buscar vuelos baratos
+        </button>
+      </div>
       <div class="hero-stats">
         <div>
           <div class="hero-stat-num">50+</div>
@@ -447,7 +464,7 @@
         <div style="font-size:0.8rem;font-weight:600;color:#f43f5e">desde 34€ ✈</div>
       </div>
       <div class="hero-card-main">
-        <div class="hero-card-img">🏖️</div>
+        <img src="https://images.unsplash.com/photo-1552074284-5e88ef1aef18?w=800&q=80" alt="Cancún" style="width:100%;height:260px;object-fit:cover;display:block">
         <div class="hero-card-body">
           <div class="hero-card-tag">
             <i data-lucide="trending-down" style="width:12px;height:12px"></i>
@@ -499,7 +516,7 @@
     <p class="section-desc">Destinos increíbles sin arruinarte. Precios medios por persona incluyendo vuelo y alojamiento.</p>
     <div class="destinos-grid">
       <a href="https://www.skyscanner.es/vuelos/mad/lis/" target="_blank" rel="noopener" style="text-decoration:none"><div class="destino-card">
-        <div class="destino-img" style="background:linear-gradient(135deg,#0891b2,#0e7490,#164e63)">🏛️</div>
+        <img src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=800&q=80" alt="Lisboa" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
         <div class="destino-overlay"></div>
         <div class="destino-info">
           <div class="destino-name">Lisboa, Portugal</div>
@@ -508,7 +525,7 @@
         <div class="destino-badge">MÁS BARATO</div>
       </div></a>
       <a href="https://www.skyscanner.es/vuelos/mad/rak/" target="_blank" rel="noopener" style="text-decoration:none"><div class="destino-card">
-        <div class="destino-img" style="background:linear-gradient(135deg,#d97706,#b45309,#92400e)">🕌</div>
+        <img src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=800&q=80" alt="Marrakech" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
         <div class="destino-overlay"></div>
         <div class="destino-info">
           <div class="destino-name">Marrakech</div>
@@ -516,7 +533,7 @@
         </div>
       </div></a>
       <a href="https://www.skyscanner.es/vuelos/mad/krk/" target="_blank" rel="noopener" style="text-decoration:none"><div class="destino-card">
-        <div class="destino-img" style="background:linear-gradient(135deg,#059669,#047857,#065f46)">🏔️</div>
+        <img src="https://images.unsplash.com/photo-1574623452334-1e0ac2b3ccb4?w=800&q=80" alt="Cracovia" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
         <div class="destino-overlay"></div>
         <div class="destino-info">
           <div class="destino-name">Cracovia, Polonia</div>
@@ -525,7 +542,7 @@
         <div class="destino-badge" style="background:#10b981">TOP CULTURAL</div>
       </div></a>
       <a href="https://www.skyscanner.es/vuelos/mad/buh/" target="_blank" rel="noopener" style="text-decoration:none"><div class="destino-card">
-        <div class="destino-img" style="background:linear-gradient(135deg,#7c3aed,#6d28d9,#5b21b6)">🏖️</div>
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Bucarest" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
         <div class="destino-overlay"></div>
         <div class="destino-info">
           <div class="destino-name">Bucarest, Rumanía</div>
@@ -533,11 +550,36 @@
         </div>
       </div></a>
       <a href="https://www.skyscanner.es/vuelos/mad/bud/" target="_blank" rel="noopener" style="text-decoration:none"><div class="destino-card">
-        <div class="destino-img" style="background:linear-gradient(135deg,#dc2626,#b91c1c,#991b1b)">🏟️</div>
+        <img src="https://images.unsplash.com/photo-1551867633-194f125bddfa?w=800&q=80" alt="Budapest" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
         <div class="destino-overlay"></div>
         <div class="destino-info">
           <div class="destino-name">Budapest, Hungría</div>
           <div class="destino-price">✈ desde 190€/persona</div>
+        </div>
+      </div></a>
+      <a href="https://www.skyscanner.es/vuelos/mad/prg/" target="_blank" rel="noopener" style="text-decoration:none"><div class="destino-card">
+        <img src="https://images.unsplash.com/photo-1541849546-216549ae216d?w=800&q=80" alt="Praga" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
+        <div class="destino-overlay"></div>
+        <div class="destino-info">
+          <div class="destino-name">Praga, Rep. Checa</div>
+          <div class="destino-price">✈ desde 155€/persona</div>
+        </div>
+        <div class="destino-badge" style="background:#06b6d4">IMPRESCINDIBLE</div>
+      </div></a>
+      <a href="https://www.skyscanner.es/vuelos/mad/ath/" target="_blank" rel="noopener" style="text-decoration:none"><div class="destino-card">
+        <img src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=800&q=80" alt="Atenas" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
+        <div class="destino-overlay"></div>
+        <div class="destino-info">
+          <div class="destino-name">Atenas, Grecia</div>
+          <div class="destino-price">✈ desde 200€/persona</div>
+        </div>
+      </div></a>
+      <a href="https://www.skyscanner.es/vuelos/mad/waw/" target="_blank" rel="noopener" style="text-decoration:none"><div class="destino-card">
+        <img src="https://images.unsplash.com/photo-1519197924294-4ba991a11128?w=800&q=80" alt="Varsovia" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
+        <div class="destino-overlay"></div>
+        <div class="destino-info">
+          <div class="destino-name">Varsovia, Polonia</div>
+          <div class="destino-price">✈ desde 150€/persona</div>
         </div>
       </div></a>
     </div>
@@ -904,6 +946,15 @@
 
 <script>
   lucide.createIcons();
+
+  function buscarVuelo() {
+    const origen = document.getElementById('origen').value || 'Madrid';
+    const destino = document.getElementById('destino').value || '';
+    const url = destino 
+      ? `https://www.skyscanner.es/vuelos/${encodeURIComponent(origen.toLowerCase())}/${encodeURIComponent(destino.toLowerCase())}/`
+      : `https://www.skyscanner.es/vuelos/${encodeURIComponent(origen.toLowerCase())}/`;
+    window.open(url, '_blank');
+  }
 
   function toggleMenu() {
     const m = document.getElementById('mobile-menu');
