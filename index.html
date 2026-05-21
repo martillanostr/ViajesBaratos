@@ -955,7 +955,23 @@
   function buscarVuelo() {
     var origen = document.getElementById('buscador-origen').value.trim();
     var destino = document.getElementById('buscador-destino').value.trim();
-    window.open('https://www.google.com/travel/flights?hl=es', '_blank');
+    var origen = document.getElementById('buscador-origen').value.trim().toLowerCase();
+    var destino = document.getElementById('buscador-destino').value.trim().toLowerCase();
+    var iata = {
+      'madrid':'MAD','barcelona':'BCN','valencia':'VLC','sevilla':'SVQ','bilbao':'BIO',
+      'alicante':'ALC','malaga':'AGP','lisboa':'LIS','paris':'CDG','roma':'FCO',
+      'amsterdam':'AMS','berlin':'BER','londres':'LHR','budapest':'BUD','praga':'PRG',
+      'varsovia':'WAW','cracovia':'KRK','bucarest':'OTP','atenas':'ATH','marrakech':'RAK',
+      'nueva york':'JFK','cancun':'CUN','miami':'MIA','dubai':'DXB','tokio':'NRT',
+      'bruselas':'BRU','viena':'VIE','zurich':'ZRH','estocolmo':'ARN','oslo':'OSL',
+      'copenhague':'CPH','helsinki':'HEL','dublin':'DUB','edimburgo':'EDI','manchester':'MAN'
+    };
+    var origenCode = iata[origen] || 'MAD';
+    var destinoCode = iata[destino] || '';
+    var url = destinoCode
+      ? 'https://www.skyscanner.es/vuelos/' + origenCode.toLowerCase() + '/' + destinoCode.toLowerCase() + '/'
+      : 'https://www.skyscanner.es/vuelos/' + origenCode.toLowerCase() + '/anywhere/';
+    window.open(url, '_blank');
   }
   function toggleMenu() {
     const m = document.getElementById('mobile-menu');
