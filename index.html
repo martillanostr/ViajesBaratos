@@ -426,7 +426,24 @@
           <i data-lucide="lightbulb" style="width:16px;height:16px"></i>
         </a>
       </div>
-            <div class="hero-stats">
+            <!-- BUSCADOR -->
+      <div style="margin-top:32px;background:white;border-radius:20px;padding:24px;box-shadow:0 8px 32px rgba(26,26,46,0.1)">
+        <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#6b7280;margin-bottom:16px">✈️ Busca tu vuelo barato</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr auto;gap:10px;align-items:end">
+          <div>
+            <label style="font-size:0.75rem;font-weight:600;color:#6b7280;display:block;margin-bottom:6px">Origen</label>
+            <input id="buscador-origen" type="text" placeholder="ej: Madrid" style="width:100%;padding:12px 14px;border:1.5px solid rgba(26,26,46,0.12);border-radius:12px;font-family:DM Sans,sans-serif;font-size:0.9rem;outline:none;color:#1a1a2e;box-sizing:border-box">
+          </div>
+          <div>
+            <label style="font-size:0.75rem;font-weight:600;color:#6b7280;display:block;margin-bottom:6px">Destino</label>
+            <input id="buscador-destino" type="text" placeholder="ej: Lisboa" style="width:100%;padding:12px 14px;border:1.5px solid rgba(26,26,46,0.12);border-radius:12px;font-family:DM Sans,sans-serif;font-size:0.9rem;outline:none;color:#1a1a2e;box-sizing:border-box">
+          </div>
+          <button onclick="buscarVuelo()" style="background:#1a1a2e;color:white;border:none;cursor:pointer;padding:12px 20px;border-radius:12px;font-family:DM Sans,sans-serif;font-weight:700;font-size:0.9rem;white-space:nowrap;transition:background 0.2s" onmouseover="this.style.background='#f4a623';this.style.color='#1a1a2e'" onmouseout="this.style.color='white';this.style.background='#1a1a2e'">
+            Buscar ✈️
+          </button>
+        </div>
+      </div>
+      <div class="hero-stats">
         <div>
           <div class="hero-stat-num">50+</div>
           <div class="hero-stat-label">Destinos analizados</div>
@@ -935,6 +952,11 @@
     window.open('https://www.skyscanner.es', '_blank');
   }
 
+  function buscarVuelo() {
+    var origen = document.getElementById('buscador-origen').value.trim();
+    var destino = document.getElementById('buscador-destino').value.trim();
+    window.open('https://www.google.com/travel/flights?hl=es', '_blank');
+  }
   function toggleMenu() {
     const m = document.getElementById('mobile-menu');
     m.style.display = m.style.display === 'block' ? 'none' : 'block';
