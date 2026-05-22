@@ -964,7 +964,33 @@
       'varsovia':'WAW','cracovia':'KRK','bucarest':'OTP','atenas':'ATH','marrakech':'RAK',
       'nueva york':'JFK','cancun':'CUN','miami':'MIA','dubai':'DXB','tokio':'NRT',
       'bruselas':'BRU','viena':'VIE','zurich':'ZRH','estocolmo':'ARN','oslo':'OSL',
-      'copenhague':'CPH','helsinki':'HEL','dublin':'DUB','edimburgo':'EDI','manchester':'MAN'
+      'copenhague':'CPH','helsinki':'HEL','dublin':'DUB','edimburgo':'EDI','manchester':'MAN',
+      'tenerife':'TFN','palma':'PMI','ibiza':'IBZ','menorca':'MAH','gran canaria':'LPA',
+      'lanzarote':'ACE','fuerteventura':'FUE','santiago':'SCL','buenos aires':'EZE',
+      'bogota':'BOG','lima':'LIM','ciudad de mexico':'MEX','mexico':'MEX','tokio':'NRT',
+      'bangkok':'BKK','singapur':'SIN','sidney':'SYD','toronto':'YYZ','montreal':'YUL',
+      'lisboa':'LIS','oporto':'OPO','faro':'FAO','milan':'MXP','venecia':'VCE',
+      'florencia':'FLR','napoles':'NAP','niza':'NCE','lyon':'LYS','marsella':'MRS',
+      'munich':'MUC','hamburgo':'HAM','frankfurt':'FRA','dusseldorf':'DUS','colonia':'CGN',
+      'lisboa':'LIS','sofia':'SOF','belgrado':'BEG','zagreb':'ZAG','liubliana':'LJU',
+      'tallin':'TLL','riga':'RIX','vilna':'VNO','minsk':'MSQ','kiev':'KBP',
+      'casablanca':'CMN','cairo':'CAI','tunis':'TUN','argel':'ALG','dakar':'DSS',
+      'nairobi':'NBO','johannesburgo':'JNB','lagos':'LOS','accra':'ACC',
+      'nueva delhi':'DEL','mumbai':'BOM','calcuta':'CCU','chennai':'MAA',
+      'pekin':'PEK','shanghai':'PVG','hong kong':'HKG','seul':'ICN','osaka':'KIX',
+      'kuala lumpur':'KUL','jakarta':'CGK','manila':'MNL','hanoi':'HAN','ho chi minh':'SGN',
+      'los angeles':'LAX','san francisco':'SFO','chicago':'ORD','houston':'IAH',
+      'boston':'BOS','washington':'IAD','atlanta':'ATL','dallas':'DFW','seattle':'SEA',
+      'vancouver':'YVR','calgary':'YYC','ottawa':'YOW','ciudad de panama':'PTY',
+      'san jose':'SJO','guadalajara':'GDL','monterrey':'MTY','habana':'HAV',
+      'santo domingo':'SDQ','san juan':'SJU','kingston':'KIN','bridgetown':'BGI',
+      'reykjavik':'KEF','bergen':'BGO','gotemburgo':'GOT','malmo':'MMX',
+      'poznan':'POZ','gdansk':'GDN','lodz':'LCJ','katowice':'KTW','wroclaw':'WRO',
+      'cluj':'CLJ','timisoara':'TSR','iasi':'IAS','chisinau':'KIV',
+      'ankara':'ESB','estambul':'IST','antalya':'AYT','izmir':'ADB','bodrum':'BJV',
+      'tel aviv':'TLV','beirut':'BEY','amman':'AMM','bagdad':'BGW','teheran':'IKA',
+      'riad':'RUH','jeddah':'JED','abu dabi':'AUH','doha':'DOH','kuwait':'KWI',
+      'muscat':'MCT','colombo':'CMB','dhaka':'DAC','karachi':'KHI','lahore':'LHE'
     };
     var origenCode = iata[origen] || 'MAD';
     var destinoCode = iata[destino] || '';
@@ -1018,5 +1044,27 @@
     document.querySelector('nav').style.boxShadow = window.scrollY > 20 ? '0 4px 20px rgba(26,26,46,0.08)' : 'none';
   });
 </script>
+
+  <!-- BANNER COOKIES -->
+  <div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#1a1a2e;color:white;padding:16px 24px;z-index:9999;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;box-shadow:0 -4px 20px rgba(0,0,0,0.2)">
+    <p style="font-size:0.875rem;margin:0;max-width:700px;opacity:0.9">🍪 Usamos cookies propias y de terceros (Google Analytics, AdSense) para mejorar tu experiencia y mostrarte publicidad relevante. <a href="privacidad.html" style="color:#f4a623;text-decoration:underline">Más información</a></p>
+    <div style="display:flex;gap:10px;flex-shrink:0">
+      <button onclick="rechazarCookies()" style="background:transparent;border:1px solid rgba(255,255,255,0.3);color:white;padding:8px 16px;border-radius:8px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:0.85rem">Rechazar</button>
+      <button onclick="aceptarCookies()" style="background:#f4a623;border:none;color:#1a1a2e;padding:8px 20px;border-radius:8px;cursor:pointer;font-family:'DM Sans',sans-serif;font-weight:700;font-size:0.85rem">Aceptar</button>
+    </div>
+  </div>
+  <script>
+    if (!localStorage.getItem('cookies-aceptadas')) {
+      document.getElementById('cookie-banner').style.display = 'flex';
+    }
+    function aceptarCookies() {
+      localStorage.setItem('cookies-aceptadas', 'true');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+    function rechazarCookies() {
+      localStorage.setItem('cookies-aceptadas', 'false');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+  </script>
 </body>
 </html>
