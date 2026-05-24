@@ -355,22 +355,23 @@
       .cta-form { flex-direction: column; }
     }
   </style>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TK6N66L2TB"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-TK6N66L2TB');
-    </script>
-    <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1">
-  (function () {
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TK6N66L2TB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TK6N66L2TB');
+  </script>
+  <!-- Travelpayouts -->
+  <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1">
+    (function () {
       var script = document.createElement("script");
       script.async = 1;
       script.src = 'https://tp-em.com/NTMxMDEz.js?t=531013';
       document.head.appendChild(script);
-  })();
-</script>
+    })();
+  </script>
 </head>
 <body>
 
@@ -388,7 +389,6 @@
       <a href="#herramientas">Herramientas</a>
       <a href="#mochilero">Mochilero</a>
       <a href="sobre-nosotros.html">Sobre mí</a>
-    </a>
     </div>
     <a href="#newsletter" class="nav-cta">
       <i data-lucide="bell" style="width:14px;height:14px"></i>
@@ -428,7 +428,7 @@
           <i data-lucide="lightbulb" style="width:16px;height:16px"></i>
         </a>
       </div>
-            <!-- BUSCADOR -->
+      <!-- BUSCADOR -->
       <div style="margin-top:32px;background:white;border-radius:20px;padding:24px;box-shadow:0 8px 32px rgba(26,26,46,0.1)">
         <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#6b7280;margin-bottom:16px">✈️ Busca tu vuelo barato</div>
         <div style="display:grid;grid-template-columns:1fr 1fr auto;gap:10px;align-items:end">
@@ -907,7 +907,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="logo">
-          <div class="logo-icon"><i data-lucide="plane" style="width:16px;height:16px;color:white"></i></div>
+          <div class="logo-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg></div>
           <span class="logo-text" style="color:white">Viajas<span>Barato</span></span>
         </div>
         <p>Tu guía definitiva para viajar más gastando menos. Consejos, destinos y herramientas para viajeros inteligentes.</p>
@@ -952,12 +952,6 @@
   lucide.createIcons();
 
   function buscarVuelo() {
-    window.open('https://www.skyscanner.es', '_blank');
-  }
-
-  function buscarVuelo() {
-    var origen = document.getElementById('buscador-origen').value.trim();
-    var destino = document.getElementById('buscador-destino').value.trim();
     var origen = document.getElementById('buscador-origen').value.trim().toLowerCase();
     var destino = document.getElementById('buscador-destino').value.trim().toLowerCase();
     var iata = {
@@ -970,133 +964,52 @@
       'copenhague':'CPH','helsinki':'HEL','dublin':'DUB','edimburgo':'EDI','manchester':'MAN',
       'tenerife':'TFN','palma':'PMI','ibiza':'IBZ','menorca':'MAH','gran canaria':'LPA',
       'lanzarote':'ACE','fuerteventura':'FUE','santiago':'SCL','buenos aires':'EZE',
-      'bogota':'BOG','lima':'LIM','ciudad de mexico':'MEX','mexico':'MEX','tokio':'NRT',
+      'bogota':'BOG','lima':'LIM','ciudad de mexico':'MEX','mexico':'MEX',
       'bangkok':'BKK','singapur':'SIN','sidney':'SYD','toronto':'YYZ','montreal':'YUL',
-      'lisboa':'LIS','oporto':'OPO','faro':'FAO','milan':'MXP','venecia':'VCE',
-      'florencia':'FLR','napoles':'NAP','niza':'NCE','lyon':'LYS','marsella':'MRS',
-      'munich':'MUC','hamburgo':'HAM','frankfurt':'FRA','dusseldorf':'DUS','colonia':'CGN',
-      'lisboa':'LIS','sofia':'SOF','belgrado':'BEG','zagreb':'ZAG','liubliana':'LJU',
-      'tallin':'TLL','riga':'RIX','vilna':'VNO','minsk':'MSQ','kiev':'KBP',
-      'casablanca':'CMN','cairo':'CAI','tunis':'TUN','argel':'ALG','dakar':'DSS',
-      'nairobi':'NBO','johannesburgo':'JNB','lagos':'LOS','accra':'ACC',
-      'nueva delhi':'DEL','mumbai':'BOM','calcuta':'CCU','chennai':'MAA',
-      'pekin':'PEK','shanghai':'PVG','hong kong':'HKG','seul':'ICN','osaka':'KIX',
-      'kuala lumpur':'KUL','jakarta':'CGK','manila':'MNL','hanoi':'HAN','ho chi minh':'SGN',
-      'los angeles':'LAX','san francisco':'SFO','chicago':'ORD','houston':'IAH',
-      'boston':'BOS','washington':'IAD','atlanta':'ATL','dallas':'DFW','seattle':'SEA',
-      'vancouver':'YVR','calgary':'YYC','ottawa':'YOW','ciudad de panama':'PTY',
-      'san jose':'SJO','guadalajara':'GDL','monterrey':'MTY','habana':'HAV',
-      'santo domingo':'SDQ','san juan':'SJU','kingston':'KIN','bridgetown':'BGI',
-      'reykjavik':'KEF','bergen':'BGO','gotemburgo':'GOT','malmo':'MMX',
-      'poznan':'POZ','gdansk':'GDN','lodz':'LCJ','katowice':'KTW','wroclaw':'WRO',
-      'cluj':'CLJ','timisoara':'TSR','iasi':'IAS','chisinau':'KIV',
-      'ankara':'ESB','estambul':'IST','antalya':'AYT','izmir':'ADB','bodrum':'BJV',
-      'tel aviv':'TLV','beirut':'BEY','amman':'AMM','bagdad':'BGW','teheran':'IKA',
-      'riad':'RUH','jeddah':'JED','abu dabi':'AUH','doha':'DOH','kuwait':'KWI',
-      'muscat':'MCT','colombo':'CMB','dhaka':'DAC','karachi':'KHI','lahore':'LHE',
-      'turin':'TRN','torino':'TRN','bolonia':'BLQ','bologna':'BLQ','genova':'GOA',
-      'palermo':'PMO','catania':'CTA','bari':'BRI','verona':'VRN','pisa':'PSA',
-      'trieste':'TRS','cagliari':'CAG','lamezia':'SUF','reggio calabria':'REG',
-      'burdeos':'BOD','toulouse':'TLS','estrasburgo':'SXB','nantes':'NTE','rennes':'RNS',
-      'lille':'LIL','montpellier':'MPL','grenoble':'GNB','tours':'TUF',
-      'dortmund':'DTM','bremen':'BRE','nuremberg':'NUE','stuttgart':'STR','leipzig':'LEJ',
-      'hannover':'HAJ','dresde':'DRS','erfurt':'ERF','rostock':'RLG',
-      'salzburgo':'SZG','graz':'GRZ','innsbruck':'INN','klagenfurt':'KLU',
-      'basilea':'BSL','ginebra':'GVA','berna':'BRN','lugano':'LUG',
-      'amberes':'ANR','lieja':'LGG','gante':'GNE','brujas':'OST',
-      'rotterdam':'RTM','utrecht':'UTC','eindhoven':'EIN','groningen':'GRQ',
-      'copenhague':'CPH','aarhus':'AAR','odense':'ODE','aalborg':'AAL',
-      'gotemburgo':'GOT','malmo':'MMX','linkoping':'LPI','umea':'UME','lulea':'LLA',
-      'bergen':'BGO','stavanger':'SVG','trondheim':'TRD','tromso':'TOS',
-      'tampere':'TMP','turku':'TKU','oulu':'OUL','rovaniemi':'RVN',
-      'vilna':'VNO','kaunas':'KUN','klaipeda':'PLQ',
-      'riga':'RIX','liepaja':'LPX',
-      'tallin':'TLL','tartu':'TAY',
-      'varsovia':'WAW','cracovia':'KRK','gdansk':'GDN','poznan':'POZ','wroclaw':'WRO',
-      'lodz':'LCJ','katowice':'KTW','rzeszow':'RZE','lublin':'LUZ',
-      'praga':'PRG','brno':'BRQ','ostrava':'OSR','karlovy vary':'KLV',
-      'bratislava':'BTS','kosice':'KSC','poprad':'TAT',
-      'budapest':'BUD','debrecen':'DEB','pecs':'PEV','gyor':'QGY',
-      'bucarest':'OTP','cluj':'CLJ','timisoara':'TSR','iasi':'IAS','constanta':'CND',
-      'sofia':'SOF','plovdiv':'PDV','varna':'VAR','burgas':'BOJ',
-      'belgrado':'BEG','novi sad':'QND','nis':'INI',
-      'zagreb':'ZAG','split':'SPU','dubrovnik':'DBV','zadar':'ZAD','pula':'PUY',
-      'liubliana':'LJU','maribor':'MBX',
-      'sarajevo':'SJJ','tuzla':'TZL','mostar':'OMO',
-      'podgorica':'TGD','tivat':'TIV',
-      'skopje':'SKP','ohrid':'OHD',
-      'tirana':'TIA','vlore':'VLO',
-      'atenas':'ATH','tesalonica':'SKG','heraklion':'HER','rodas':'RHO','corfú':'CFU',
-      'corfu':'CFU','mykonos':'JMK','santorini':'JTR','mikonos':'JMK',
-      'nicosia':'NIC','larnaca':'LCA','pafos':'PFO',
-      'la valeta':'MLA','malta':'MLA',
-      'reykjavik':'KEF','akureyri':'AEY',
-      'dublin':'DUB','cork':'ORK','shannon':'SNN','knock':'NOC',
-      'glasgow':'GLA','edimburgo':'EDI','aberdeen':'ABZ','inverness':'INV',
-      'cardiff':'CWL','bristol':'BRS','birmingham':'BHX','leeds':'LBA',
-      'liverpool':'LPL','newcastle':'NCL','belfast':'BFS','exeter':'EXT',
-      'amsterdam':'AMS','eindhoven':'EIN',
-      'Lisboa':'LIS','oporto':'OPO','faro':'FAO','funchal':'FNC',
-      'las palmas':'LPA','tenerife sur':'TFS','santa cruz tenerife':'TFN',
-      'lanzarote':'ACE','fuerteventura':'FUE','la palma':'SPC',
-      'palma mallorca':'PMI','ibiza':'IBZ','menorca':'MAH',
+      'oporto':'OPO','faro':'FAO','milan':'MXP','venecia':'VCE','florencia':'FLR',
+      'napoles':'NAP','niza':'NCE','lyon':'LYS','marsella':'MRS','munich':'MUC',
+      'hamburgo':'HAM','frankfurt':'FRA','dusseldorf':'DUS','colonia':'CGN',
+      'sofia':'SOF','belgrado':'BEG','zagreb':'ZAG','liubliana':'LJU',
+      'tallin':'TLL','riga':'RIX','vilna':'VNO','cairo':'CAI','casablanca':'CMN',
+      'tunis':'TUN','dakar':'DSS','nairobi':'NBO','johannesburgo':'JNB',
+      'nueva delhi':'DEL','mumbai':'BOM','bangalore':'BLR','karachi':'KHI',
+      'dhaka':'DAC','colombo':'CMB','katmandu':'KTM','osaka':'KIX','seul':'ICN',
+      'pekin':'PEK','shanghai':'PVG','guangzhou':'CAN','hong kong':'HKG','taipei':'TPE',
+      'kuala lumpur':'KUL','jakarta':'CGK','bali':'DPS','manila':'MNL',
+      'hanoi':'HAN','ho chi minh':'SGN','phnom penh':'PNH','yangon':'RGN',
+      'melbourne':'MEL','brisbane':'BNE','perth':'PER','auckland':'AKL',
+      'los angeles':'LAX','san francisco':'SFO','chicago':'ORD','boston':'BOS',
+      'washington':'IAD','atlanta':'ATL','dallas':'DFW','seattle':'SEA',
+      'vancouver':'YVR','calgary':'YYC','ciudad de panama':'PTY','san jose':'SJO',
+      'habana':'HAV','santo domingo':'SDQ','san juan':'SJU',
+      'istanbul':'IST','estambul':'IST','ankara':'ESB','antalya':'AYT',
+      'tel aviv':'TLV','beirut':'BEY','amman':'AMM','doha':'DOH','kuwait':'KWI',
+      'riad':'RUH','jeddah':'JED','abu dabi':'AUH','muscat':'MCT',
+      'turin':'TRN','torino':'TRN','bolonia':'BLQ','genova':'GOA','palermo':'PMO',
       'zaragoza':'ZAZ','valladolid':'VLL','santander':'SDR','asturias':'OVD',
       'a coruña':'LCG','vigo':'VGO','santiago de compostela':'SCQ',
       'granada':'GRX','murcia':'RMU','almeria':'LEI','jerez':'XRY',
-      'melilla':'MLN','ceuta':'JCU','pamplona':'PNA','logrono':'RJL',
-      'vitoria':'VIT','san sebastian':'EAS','reus':'REU','girona':'GRO',
-      'nueva york':'JFK','los angeles':'LAX','chicago':'ORD','miami':'MIA',
-      'san francisco':'SFO','boston':'BOS','washington':'IAD','seattle':'SEA',
-      'dallas':'DFW','houston':'IAH','atlanta':'ATL','denver':'DEN',
-      'las vegas':'LAS','orlando':'MCO','tampa':'TPA','phoenix':'PHX',
-      'detroit':'DTW','minneapolis':'MSP','portland':'PDX','salt lake city':'SLC',
-      'toronto':'YYZ','montreal':'YUL','vancouver':'YVR','calgary':'YYC','ottawa':'YOW',
-      'ciudad de mexico':'MEX','mexico':'MEX','guadalajara':'GDL','monterrey':'MTY',
-      'cancun':'CUN','puerto vallarta':'PVR','los cabos':'SJD','oaxaca':'OAX',
-      'bogota':'BOG','medellin':'MDE','cali':'CLO','cartagena':'CTG','barranquilla':'BAQ',
-      'lima':'LIM','cusco':'CUZ','arequipa':'AQP',
-      'buenos aires':'EZE','cordoba':'COR','mendoza':'MDZ','bariloche':'BRC',
-      'santiago':'SCL','valparaiso':'VAP',
-      'sao paulo':'GRU','rio de janeiro':'GIG','brasilia':'BSB','salvador':'SSA',
-      'fortaleza':'FOR','belem':'BEL','manaus':'MAO','recife':'REC','porto alegre':'POA',
-      'montevideo':'MVD','asuncion':'ASU','santa cruz':'VVI','la paz':'LPB','quito':'UIO',
-      'guayaquil':'GYE','caracas':'CCS','maracaibo':'MAR',
-      'panama':'PTY','san jose':'SJO','tegucigalpa':'TGU','managua':'MGA',
-      'guatemala':'GUA','san salvador':'SAL','san pedro sula':'SAP',
-      'habana':'HAV','santo domingo':'SDQ','san juan':'SJU','kingston':'KIN',
-      'dubai':'DXB','abu dabi':'AUH','sharjah':'SHJ',
-      'doha':'DOH','kuwait':'KWI','riad':'RUH','jeddah':'JED','muscat':'MCT',
-      'tel aviv':'TLV','beirut':'BEY','amman':'AMM','bagdad':'BGW',
-      'teheran':'IKA','mashhad':'MHD','isfahan':'IFN','shiraz':'SYZ',
-      'istanbul':'IST','estambul':'IST','ankara':'ESB','antalya':'AYT',
-      'izmir':'ADB','bodrum':'BJV','dalaman':'DLM','trabzon':'TZX',
-      'cairo':'CAI','alejandria':'HBE','luxor':'LXR','hurgada':'HRG','sharm':'SSH',
-      'casablanca':'CMN','marrakech':'RAK','fez':'FEZ','rabat':'RBA','agadir':'AGA',
-      'tunis':'TUN','djerba':'DJE',
-      'argel':'ALG','oran':'ORN','constantina':'CZL',
-      'tripoli':'TIP','benghazi':'BEN',
-      'dakar':'DSS','abidjan':'ABJ','accra':'ACC','lagos':'LOS','nairobi':'NBO',
-      'johannesburgo':'JNB','ciudad del cabo':'CPT','durban':'DUR',
-      'addis abeba':'ADD','dar es salaam':'DAR','kampala':'EBB','kigali':'KGL',
-      'nueva delhi':'DEL','mumbai':'BOM','calcuta':'CCU','bangalore':'BLR',
-      'chennai':'MAA','hyderabad':'HYD','pune':'PNQ','ahmedabad':'AMD',
-      'karachi':'KHI','lahore':'LHE','islamabad':'ISB','peshawar':'PEW',
-      'dhaka':'DAC','chittagong':'CGP',
-      'colombo':'CMB','katmandu':'KTM','kabul':'KBL',
-      'tokio':'NRT','osaka':'KIX','nagoya':'NGO','fukuoka':'FUK','sapporo':'CTS',
-      'seul':'ICN','busan':'PUS','jeju':'CJU',
-      'pekin':'PEK','shanghai':'PVG','guangzhou':'CAN','shenzhen':'SZX',
-      'chengdu':'CTU','xian':'XIY','kunming':'KMG','chongqing':'CKG',
-      'hong kong':'HKG','macao':'MFM','taipei':'TPE','kaohsiung':'KHH',
-      'bangkok':'BKK','chiang mai':'CNX','phuket':'HKT','krabi':'KBV',
-      'singapur':'SIN','kuala lumpur':'KUL','penang':'PEN','kota kinabalu':'BKI',
-      'jakarta':'CGK','bali':'DPS','surabaya':'SUB','yogyakarta':'JOG',
-      'manila':'MNL','cebu':'CEB','davao':'DVO',
-      'hanoi':'HAN','ho chi minh':'SGN','da nang':'DAD','hoi an':'DAD',
-      'phnom penh':'PNH','siem reap':'REP','vientiane':'VTE','yangon':'RGN',
-      'sidney':'SYD','melbourne':'MEL','brisbane':'BNE','perth':'PER',
-      'adelaide':'ADL','cairns':'CNS','darwin':'DRW','gold coast':'OOL',
-      'auckland':'AKL','wellington':'WLG','christchurch':'CHC','queenstown':'ZQN'
+      'pamplona':'PNA','vitoria':'VIT','san sebastian':'EAS','reus':'REU','girona':'GRO',
+      'las vegas':'LAS','orlando':'MCO','miami':'MIA','phoenix':'PHX',
+      'sao paulo':'GRU','rio de janeiro':'GIG','brasilia':'BSB',
+      'montevideo':'MVD','asuncion':'ASU','quito':'UIO','guayaquil':'GYE',
+      'medellin':'MDE','cartagena':'CTG','cusco':'CUZ',
+      'salzburgo':'SZG','graz':'GRZ','innsbruck':'INN',
+      'basilea':'BSL','ginebra':'GVA','berna':'BRN',
+      'amberes':'ANR','rotterdam':'RTM','eindhoven':'EIN',
+      'gotemburgo':'GOT','malmo':'MMX','bergen':'BGO','stavanger':'SVG',
+      'tampere':'TMP','turku':'TKU','rovaniemi':'RVN',
+      'poznan':'POZ','gdansk':'GDN','wroclaw':'WRO','katowice':'KTW',
+      'brno':'BRQ','bratislava':'BTS','kosice':'KSC',
+      'debrecen':'DEB','cluj':'CLJ','timisoara':'TSR','varna':'VAR','burgas':'BOJ',
+      'split':'SPU','dubrovnik':'DBV','zadar':'ZAD',
+      'tesalonica':'SKG','heraklion':'HER','rodas':'RHO','mykonos':'JMK','santorini':'JTR',
+      'larnaca':'LCA','malta':'MLA','reykjavik':'KEF',
+      'cork':'ORK','glasgow':'GLA','aberdeen':'ABZ',
+      'cardiff':'CWL','bristol':'BRS','birmingham':'BHX','leeds':'LBA',
+      'liverpool':'LPL','newcastle':'NCL','belfast':'BFS',
+      'funchal':'FNC','tenerife sur':'TFS','la palma':'SPC',
+      'palma mallorca':'PMI','gran canaria':'LPA'
     };
     var origenCode = iata[origen] || 'MAD';
     var destinoCode = iata[destino] || '';
@@ -1105,6 +1018,7 @@
       : 'https://www.skyscanner.es/vuelos/' + origenCode.toLowerCase() + '/anywhere/';
     window.open(url, '_blank');
   }
+
   function toggleMenu() {
     const m = document.getElementById('mobile-menu');
     m.style.display = m.style.display === 'block' ? 'none' : 'block';
@@ -1151,26 +1065,27 @@
   });
 </script>
 
-  <!-- BANNER COOKIES -->
-  <div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#1a1a2e;color:white;padding:16px 24px;z-index:9999;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;box-shadow:0 -4px 20px rgba(0,0,0,0.2)">
-    <p style="font-size:0.875rem;margin:0;max-width:700px;opacity:0.9">🍪 Usamos cookies propias y de terceros (Google Analytics, AdSense) para mejorar tu experiencia y mostrarte publicidad relevante. <a href="privacidad.html" style="color:#f4a623;text-decoration:underline">Más información</a></p>
-    <div style="display:flex;gap:10px;flex-shrink:0">
-      <button onclick="rechazarCookies()" style="background:transparent;border:1px solid rgba(255,255,255,0.3);color:white;padding:8px 16px;border-radius:8px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:0.85rem">Rechazar</button>
-      <button onclick="aceptarCookies()" style="background:#f4a623;border:none;color:#1a1a2e;padding:8px 20px;border-radius:8px;cursor:pointer;font-family:'DM Sans',sans-serif;font-weight:700;font-size:0.85rem">Aceptar</button>
-    </div>
+<!-- BANNER COOKIES -->
+<div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#1a1a2e;color:white;padding:16px 24px;z-index:9999;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;box-shadow:0 -4px 20px rgba(0,0,0,0.2)">
+  <p style="font-size:0.875rem;margin:0;max-width:700px;opacity:0.9">🍪 Usamos cookies propias y de terceros (Google Analytics, AdSense) para mejorar tu experiencia y mostrarte publicidad relevante. <a href="privacidad.html" style="color:#f4a623;text-decoration:underline">Más información</a></p>
+  <div style="display:flex;gap:10px;flex-shrink:0">
+    <button onclick="rechazarCookies()" style="background:transparent;border:1px solid rgba(255,255,255,0.3);color:white;padding:8px 16px;border-radius:8px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:0.85rem">Rechazar</button>
+    <button onclick="aceptarCookies()" style="background:#f4a623;border:none;color:#1a1a2e;padding:8px 20px;border-radius:8px;cursor:pointer;font-family:'DM Sans',sans-serif;font-weight:700;font-size:0.85rem">Aceptar</button>
   </div>
-  <script>
-    if (!localStorage.getItem('cookies-aceptadas')) {
-      document.getElementById('cookie-banner').style.display = 'flex';
-    }
-    function aceptarCookies() {
-      localStorage.setItem('cookies-aceptadas', 'true');
-      document.getElementById('cookie-banner').style.display = 'none';
-    }
-    function rechazarCookies() {
-      localStorage.setItem('cookies-aceptadas', 'false');
-      document.getElementById('cookie-banner').style.display = 'none';
-    }
-  </script>
+</div>
+<script>
+  if (!localStorage.getItem('cookies-aceptadas')) {
+    document.getElementById('cookie-banner').style.display = 'flex';
+  }
+  function aceptarCookies() {
+    localStorage.setItem('cookies-aceptadas', 'true');
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+  function rechazarCookies() {
+    localStorage.setItem('cookies-aceptadas', 'false');
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+</script>
+
 </body>
 </html>
