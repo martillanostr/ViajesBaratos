@@ -18,13 +18,12 @@
     "headline": "Viajar barato a Viena: 3 días con menos de 270€ en pleno invierno",
     "author": { "@type": "Person", "name": "Martí Llanos Planas" },
     "datePublished": "2026-02-08",
-    "dateModified": "2026-05-25",
+    "dateModified": "2026-06-11",
     "publisher": { "@type": "Organization", "name": "ViajasBarato.es" },
     "description": "Presupuesto real de un viaje a Viena en febrero: vuelos desde 93€, hotel a 16€/noche y los trucos que aprendimos de dos españoles que viven allí."
   }
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TK6N66L2TB"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -32,7 +31,6 @@
     gtag('js', new Date());
     gtag('config', 'G-TK6N66L2TB');
   </script>
-  <!-- Travelpayouts -->
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1">
     (function () {
       var script = document.createElement("script");
@@ -43,82 +41,39 @@
   </script>
   <style>
     :root {
-      --sand: #f5f0e8;
-      --ink: #1a1a2e;
-      --ink-light: #2d2d4e;
-      --sun: #f4a623;
-      --sun-light: #ffd166;
-      --sea: #06b6d4;
-      --sea-dark: #0891b2;
-      --leaf: #10b981;
-      --coral: #f43f5e;
-      --white: #ffffff;
-      --gray: #6b7280;
+      --sand: #f5f0e8; --ink: #1a1a2e; --ink-light: #2d2d4e; --sun: #f4a623;
+      --sun-light: #ffd166; --sea: #06b6d4; --sea-dark: #0891b2; --leaf: #10b981;
+      --coral: #f43f5e; --white: #ffffff; --gray: #6b7280;
     }
-
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'DM Sans', sans-serif; background: var(--sand); color: var(--ink); }
-
-    nav {
-      background: rgba(245,240,232,0.95); backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(26,26,46,0.08); padding: 0 24px;
-      height: 64px; display: flex; align-items: center; justify-content: space-between;
-      position: sticky; top: 0; z-index: 100;
-    }
+    nav { background: rgba(245,240,232,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(26,26,46,0.08); padding: 0 24px; height: 64px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
     .logo { display: flex; align-items: center; gap: 8px; text-decoration: none; }
     .logo-icon { width: 36px; height: 36px; background: var(--ink); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
     .logo-text { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--ink); font-weight: 700; }
     .logo-text span { color: var(--sun); }
     .nav-back { font-size: 0.875rem; color: var(--gray); text-decoration: none; font-weight: 500; transition: color 0.2s; }
     .nav-back:hover { color: var(--ink); }
-
-    .article-hero {
-      background: linear-gradient(160deg, #1a1a2e 0%, #0f1f3d 60%, #1a1a2e 100%);
-      padding: 64px 24px 56px; color: white; position: relative; overflow: hidden;
-    }
-    .article-hero::before {
-      content: ''; position: absolute; inset: 0;
-      background: url('img/viena1.jpg') center/cover no-repeat;
-      opacity: 0.18;
-    }
+    .article-hero { background: linear-gradient(160deg, #1a1a2e 0%, #0f1f3d 60%, #1a1a2e 100%); padding: 64px 24px 56px; color: white; position: relative; overflow: hidden; }
+    .article-hero::before { content: ''; position: absolute; inset: 0; background: url('img/viena1.jpg') center/cover no-repeat; opacity: 0.18; }
     .article-hero-inner { position: relative; max-width: 760px; margin: 0 auto; }
     .breadcrumb { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-bottom: 20px; display: flex; align-items: center; gap: 6px; }
     .breadcrumb a { color: rgba(255,255,255,0.5); text-decoration: none; }
     .breadcrumb a:hover { color: var(--sun); }
     .breadcrumb span { color: rgba(255,255,255,0.3); }
-    .article-label {
-      display: inline-flex; align-items: center; gap: 6px;
-      background: rgba(244,166,35,0.2); border: 1px solid rgba(244,166,35,0.4);
-      color: var(--sun-light); border-radius: 100px;
-      padding: 5px 14px; font-size: 0.75rem; font-weight: 700;
-      text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 20px;
-    }
-    .article-hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(1.9rem, 4vw, 2.9rem);
-      font-weight: 900; line-height: 1.15; margin-bottom: 20px;
-    }
+    .article-label { display: inline-flex; align-items: center; gap: 6px; background: rgba(244,166,35,0.2); border: 1px solid rgba(244,166,35,0.4); color: var(--sun-light); border-radius: 100px; padding: 5px 14px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 20px; }
+    .article-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(1.9rem, 4vw, 2.9rem); font-weight: 900; line-height: 1.15; margin-bottom: 20px; }
     .article-hero h1 em { color: var(--sun); font-style: italic; }
     .article-meta { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-bottom: 28px; }
     .article-meta-item { display: flex; align-items: center; gap: 6px; font-size: 0.85rem; color: rgba(255,255,255,0.6); }
     .article-meta-item strong { color: white; }
-    .article-summary {
-      background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 16px; padding: 20px 24px;
-      display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
-    }
+    .article-summary { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 20px 24px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
     .summary-item { text-align: center; }
     .summary-num { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 900; color: var(--sun); }
     .summary-label { font-size: 0.72rem; color: rgba(255,255,255,0.5); margin-top: 2px; text-transform: uppercase; letter-spacing: 0.05em; }
-
     .article-layout { max-width: 1100px; margin: 0 auto; padding: 48px 24px 80px; display: grid; grid-template-columns: 1fr 300px; gap: 48px; align-items: start; }
-
     .article-content { min-width: 0; }
-    .article-content h2 {
-      font-family: 'Playfair Display', serif; font-size: 1.7rem; font-weight: 900;
-      color: var(--ink); margin: 48px 0 16px; line-height: 1.2;
-      padding-top: 8px; border-top: 3px solid var(--sun);
-    }
+    .article-content h2 { font-family: 'Playfair Display', serif; font-size: 1.7rem; font-weight: 900; color: var(--ink); margin: 48px 0 16px; line-height: 1.2; padding-top: 8px; border-top: 3px solid var(--sun); }
     .article-content h2:first-child { margin-top: 0; }
     .article-content h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--ink); margin: 28px 0 10px; }
     .article-content p { font-size: 1rem; line-height: 1.85; color: #374151; margin-bottom: 16px; }
@@ -128,53 +83,26 @@
     .article-content ul { margin: 12px 0 16px 0; display: flex; flex-direction: column; gap: 8px; }
     .article-content ul li { font-size: 0.97rem; color: #374151; line-height: 1.6; padding-left: 20px; position: relative; }
     .article-content ul li::before { content: '→'; position: absolute; left: 0; color: var(--sun); font-weight: 700; }
-
-    .quote-box {
-      background: white; border-radius: 20px; padding: 28px 32px;
-      border-left: 4px solid var(--sun); margin: 32px 0;
-      box-shadow: 0 4px 20px rgba(26,26,46,0.06);
-    }
+    .quote-box { background: white; border-radius: 20px; padding: 28px 32px; border-left: 4px solid var(--sun); margin: 32px 0; box-shadow: 0 4px 20px rgba(26,26,46,0.06); }
     .quote-box p { font-size: 1.05rem; font-style: italic; color: var(--ink); line-height: 1.7; margin: 0; }
     .quote-box cite { display: block; font-size: 0.8rem; color: var(--gray); font-style: normal; margin-top: 10px; }
-
-    .info-box {
-      background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 16px;
-      padding: 20px 24px; margin: 24px 0;
-    }
+    .info-box { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 16px; padding: 20px 24px; margin: 24px 0; }
     .info-box-title { font-weight: 700; font-size: 0.9rem; color: #166534; margin-bottom: 8px; }
     .info-box p { font-size: 0.9rem; color: #166534; margin: 0; line-height: 1.6; }
-
-    .warning-box {
-      background: #fffbeb; border: 1px solid #fde68a; border-radius: 16px;
-      padding: 20px 24px; margin: 24px 0;
-    }
+    .warning-box { background: #fffbeb; border: 1px solid #fde68a; border-radius: 16px; padding: 20px 24px; margin: 24px 0; }
     .warning-box-title { font-weight: 700; font-size: 0.9rem; color: #92400e; margin-bottom: 8px; }
     .warning-box p { font-size: 0.9rem; color: #92400e; margin: 0; line-height: 1.6; }
-
-    .story-box {
-      background: linear-gradient(135deg, #fef9ef, #fff);
-      border-radius: 20px; padding: 28px 32px;
-      border: 1px solid rgba(244,166,35,0.25); margin: 32px 0;
-    }
+    .story-box { background: linear-gradient(135deg, #fef9ef, #fff); border-radius: 20px; padding: 28px 32px; border: 1px solid rgba(244,166,35,0.25); margin: 32px 0; }
     .story-box-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--sun); margin-bottom: 10px; }
     .story-box p { font-size: 0.97rem; color: #374151; line-height: 1.8; margin: 0; }
-
-    .article-img {
-      width: 100%; border-radius: 20px; overflow: hidden; margin: 28px 0;
-      box-shadow: 0 8px 32px rgba(26,26,46,0.1);
-    }
+    .article-img { width: 100%; border-radius: 20px; overflow: hidden; margin: 28px 0; box-shadow: 0 8px 32px rgba(26,26,46,0.1); }
     .article-img img { width: 100%; height: 340px; object-fit: cover; display: block; }
     .article-img figcaption { background: white; padding: 12px 16px; font-size: 0.8rem; color: var(--gray); font-style: italic; }
-
     .img-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 28px 0; }
     .img-grid figure { border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(26,26,46,0.08); margin: 0; }
     .img-grid figure img { width: 100%; height: 220px; object-fit: cover; display: block; }
     .img-grid figcaption { background: white; padding: 10px 14px; font-size: 0.78rem; color: var(--gray); font-style: italic; }
-
-    .budget-table {
-      background: white; border-radius: 20px; overflow: hidden;
-      box-shadow: 0 4px 20px rgba(26,26,46,0.08); margin: 28px 0;
-    }
+    .budget-table { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 20px rgba(26,26,46,0.08); margin: 28px 0; }
     .budget-header { background: var(--ink); color: white; padding: 16px 24px; font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; }
     .budget-row { display: flex; justify-content: space-between; align-items: center; padding: 14px 24px; border-bottom: 1px solid rgba(26,26,46,0.06); }
     .budget-row:last-child { border-bottom: none; }
@@ -186,34 +114,16 @@
     .budget-bar-wrap { padding: 0 24px 4px; background: white; }
     .budget-bar { height: 3px; background: rgba(26,26,46,0.06); border-radius: 2px; overflow: hidden; margin-bottom: 12px; }
     .budget-bar-fill { height: 100%; border-radius: 2px; background: linear-gradient(90deg, var(--sun), var(--sea)); }
-
-    .cta-afiliado {
-      background: var(--ink); color: white; border-radius: 20px;
-      padding: 28px 32px; margin: 36px 0; text-align: center;
-    }
+    .cta-afiliado { background: var(--ink); color: white; border-radius: 20px; padding: 28px 32px; margin: 36px 0; text-align: center; }
     .cta-afiliado p { color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 16px; line-height: 1.6; }
     .cta-afiliado h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: white; margin-bottom: 8px; }
-    .cta-btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: var(--sun); color: var(--ink); text-decoration: none;
-      padding: 13px 28px; border-radius: 100px; font-weight: 700; font-size: 0.9rem;
-      transition: all 0.2s;
-    }
+    .cta-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--sun); color: var(--ink); text-decoration: none; padding: 13px 28px; border-radius: 100px; font-weight: 700; font-size: 0.9rem; transition: all 0.2s; }
     .cta-btn:hover { background: var(--sun-light); transform: translateY(-2px); }
-    .cta-btn-secondary {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: rgba(255,255,255,0.1); color: white; text-decoration: none;
-      padding: 13px 28px; border-radius: 100px; font-weight: 600; font-size: 0.9rem;
-      border: 1px solid rgba(255,255,255,0.2); transition: all 0.2s; margin-left: 10px;
-    }
+    .cta-btn-secondary { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); color: white; text-decoration: none; padding: 13px 28px; border-radius: 100px; font-weight: 600; font-size: 0.9rem; border: 1px solid rgba(255,255,255,0.2); transition: all 0.2s; margin-left: 10px; }
     .cta-btn-secondary:hover { background: rgba(255,255,255,0.2); }
     .cta-btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
-
     .article-sidebar { position: sticky; top: 80px; display: flex; flex-direction: column; gap: 20px; }
-    .sidebar-box {
-      background: white; border-radius: 20px; padding: 24px;
-      border: 1px solid rgba(26,26,46,0.06); box-shadow: 0 4px 16px rgba(26,26,46,0.04);
-    }
+    .sidebar-box { background: white; border-radius: 20px; padding: 24px; border: 1px solid rgba(26,26,46,0.06); box-shadow: 0 4px 16px rgba(26,26,46,0.04); }
     .sidebar-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid var(--sun); }
     .toc-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
     .toc-list li a { display: block; padding: 7px 10px; border-radius: 8px; font-size: 0.85rem; color: var(--gray); text-decoration: none; transition: all 0.2s; line-height: 1.4; }
@@ -224,7 +134,6 @@
     .sidebar-cta { background: linear-gradient(135deg, var(--ink), #2d2d4e); border-radius: 20px; padding: 24px; color: white; text-align: center; }
     .sidebar-cta p { font-size: 0.85rem; color: rgba(255,255,255,0.7); margin-bottom: 14px; line-height: 1.5; }
     .sidebar-cta .cta-btn { width: 100%; justify-content: center; font-size: 0.85rem; padding: 11px 20px; }
-
     .lugares-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
     .lugar-card { background: white; border-radius: 16px; padding: 18px; border: 1px solid rgba(26,26,46,0.06); transition: all 0.2s; }
     .lugar-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(26,26,46,0.08); }
@@ -233,51 +142,31 @@
     .lugar-desc { font-size: 0.8rem; color: var(--gray); line-height: 1.5; }
     .lugar-free { display: inline-block; background: #dcfce7; color: #166534; border-radius: 100px; padding: 2px 8px; font-size: 0.7rem; font-weight: 700; margin-top: 6px; }
     .lugar-paid { display: inline-block; background: #fef3c7; color: #92400e; border-radius: 100px; padding: 2px 8px; font-size: 0.7rem; font-weight: 700; margin-top: 6px; }
-
     .tips-list { display: flex; flex-direction: column; gap: 16px; margin: 24px 0; }
     .tip-item { display: flex; gap: 14px; align-items: flex-start; }
     .tip-num { width: 32px; height: 32px; border-radius: 50%; background: var(--ink); color: white; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-weight: 900; font-size: 0.85rem; flex-shrink: 0; margin-top: 2px; }
     .tip-text { font-size: 0.95rem; color: #374151; line-height: 1.65; }
     .tip-text strong { color: var(--ink); }
-
-    .author-box {
-      background: white; border-radius: 20px; padding: 28px 32px;
-      border: 1px solid rgba(26,26,46,0.06); margin: 48px 0 0;
-      display: flex; gap: 20px; align-items: flex-start;
-    }
+    .author-box { background: white; border-radius: 20px; padding: 28px 32px; border: 1px solid rgba(26,26,46,0.06); margin: 48px 0 0; display: flex; gap: 20px; align-items: flex-start; }
     .author-avatar { width: 56px; height: 56px; border-radius: 50%; background: var(--ink); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0; }
     .author-name { font-weight: 700; font-size: 0.95rem; color: var(--ink); margin-bottom: 4px; }
     .author-bio { font-size: 0.85rem; color: var(--gray); line-height: 1.6; }
     .author-bio a { color: var(--sea-dark); text-decoration: none; }
     .author-bio a:hover { text-decoration: underline; }
-
     .afiliado-note { font-size: 0.8rem; color: var(--gray); background: white; border-radius: 10px; padding: 10px 14px; border: 1px solid rgba(26,26,46,0.08); margin-bottom: 32px; }
-
     footer { background: #0f0f1a; color: rgba(255,255,255,0.4); padding: 32px 24px; text-align: center; font-size: 0.85rem; }
     footer a { color: rgba(255,255,255,0.4); text-decoration: none; margin: 0 10px; transition: color 0.2s; }
     footer a:hover { color: var(--sun); }
     .footer-links { margin-top: 10px; }
-
-    @media (max-width: 860px) {
-      .article-layout { grid-template-columns: 1fr; }
-      .article-sidebar { position: static; }
-      .article-summary { grid-template-columns: repeat(2, 1fr); }
-      .lugares-grid { grid-template-columns: 1fr; }
-      .img-grid { grid-template-columns: 1fr; }
-      .cta-btn-secondary { margin-left: 0; }
-    }
-    @media (max-width: 500px) {
-      .author-box { flex-direction: column; }
-    }
+    @media (max-width: 860px) { .article-layout { grid-template-columns: 1fr; } .article-sidebar { position: static; } .article-summary { grid-template-columns: repeat(2, 1fr); } .lugares-grid { grid-template-columns: 1fr; } .img-grid { grid-template-columns: 1fr; } .cta-btn-secondary { margin-left: 0; } }
+    @media (max-width: 500px) { .author-box { flex-direction: column; } }
   </style>
 </head>
 <body>
 
 <nav>
   <a href="index.html" class="logo">
-    <div class="logo-icon">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
-    </div>
+    <div class="logo-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg></div>
     <span class="logo-text">Viajas<span>Barato</span></span>
   </a>
   <a href="index.html" class="nav-back">← Volver al inicio</a>
@@ -285,13 +174,7 @@
 
 <header class="article-hero">
   <div class="article-hero-inner">
-    <div class="breadcrumb">
-      <a href="index.html">Inicio</a>
-      <span>/</span>
-      <a href="index.html#destinos">Destinos</a>
-      <span>/</span>
-      <span>Viena</span>
-    </div>
+    <div class="breadcrumb"><a href="index.html">Inicio</a><span>/</span><a href="index.html#destinos">Destinos</a><span>/</span><span>Viena</span></div>
     <div class="article-label">✈️ Experiencia real · Austria</div>
     <h1>Viajar barato a Viena:<br><em>3 días con menos de 270€</em><br>en pleno invierno</h1>
     <div class="article-meta">
@@ -300,22 +183,10 @@
       <div class="article-meta-item">⏱️ Lectura: <strong>7 min</strong></div>
     </div>
     <div class="article-summary">
-      <div class="summary-item">
-        <div class="summary-num">93€</div>
-        <div class="summary-label">Vuelo i/v BCN</div>
-      </div>
-      <div class="summary-item">
-        <div class="summary-num">48€</div>
-        <div class="summary-label">Hotel 3 noches</div>
-      </div>
-      <div class="summary-item">
-        <div class="summary-num">~110€</div>
-        <div class="summary-label">Comida + ocio</div>
-      </div>
-      <div class="summary-item">
-        <div class="summary-num">&lt;270€</div>
-        <div class="summary-label">Total por persona</div>
-      </div>
+      <div class="summary-item"><div class="summary-num">93€</div><div class="summary-label">Vuelo i/v BCN</div></div>
+      <div class="summary-item"><div class="summary-num">48€</div><div class="summary-label">Hotel 3 noches</div></div>
+      <div class="summary-item"><div class="summary-num">~110€</div><div class="summary-label">Comida + ocio</div></div>
+      <div class="summary-item"><div class="summary-num">&lt;270€</div><div class="summary-label">Total por persona</div></div>
     </div>
   </div>
 </header>
@@ -326,9 +197,7 @@
     <p class="afiliado-note">⚠️ Este artículo contiene enlaces de afiliado. Si reservas a través de ellos, puedo recibir una comisión sin coste adicional para ti. <a href="afiliados.html">Más info aquí.</a></p>
 
     <p>Viena en febrero. Cuando le dije a la gente que iba, casi todos me preguntaron lo mismo: "¿en invierno? ¿y eso?" Pues sí, en invierno. Y fue una de las mejores decisiones del viaje, porque febrero en Viena significa precios bajos, turistas de menos y una ciudad que se vive de otra manera.</p>
-
     <p>Fui con mis dos mejores amigos, tres días, vuelo desde Barcelona. <strong>93€ el vuelo de ida y vuelta por persona</strong>, combinando Wizz Air de ida y Vueling de vuelta. El hotel nos salió a <strong>48€ por cabeza las tres noches</strong>. En total, sin pasarme ni un euro, me gasté menos de 270€ con todo incluido.</p>
-
     <p>Este artículo es exactamente lo que gasté y lo que hice. Sin adornos.</p>
 
     <div class="quote-box">
@@ -337,15 +206,10 @@
     </div>
 
     <h2 id="vuelos">Vuelos baratos a Viena desde Barcelona</h2>
-
     <p>El aeropuerto de Viena es el <strong>Vienna International Airport (VIE)</strong>, bien conectado con España desde varias ciudades. Nosotros volamos desde Barcelona.</p>
-
     <p>La ida fue con <strong>Wizz Air Malta</strong> — salida a las 9:35, llegamos a media mañana y tuvimos casi el día entero por delante. La vuelta con <strong>Vueling</strong>, salida a las 14:05. En total: <strong>93€ por persona ida y vuelta</strong>, solo equipaje de mano. Igual que con Turín, no fuimos y volvimos con la misma compañía — comparar precios entre aerolíneas distintas y combinarlas es uno de los trucos que más dinero me ahorra.</p>
-
     <h3>Por qué viajar a Viena en febrero es una buena idea</h3>
-
     <p>La temporada baja en Viena va de noviembre a marzo. Los precios de vuelos y hoteles bajan bastante, hay menos colas en los sitios más visitados y la ciudad tiene un ambiente completamente diferente al verano. Hace frío, sí, pero con buena ropa no es ningún problema — y el ahorro merece la pena.</p>
-
     <ul>
       <li>Precios de vuelo <strong>30-40% más baratos</strong> que en verano.</li>
       <li>Los palacios y museos sin las colas de julio y agosto.</li>
@@ -363,13 +227,9 @@
     </div>
 
     <h2 id="hotel">Dónde dormir barato en Viena: el A&T Hotel & Hostel</h2>
-
     <p>Nos alojamos en el <strong>A&T Hotel & Hostel</strong>. Tres noches, <strong>48€ por persona en total</strong> — algo menos de 16€ por noche. Para Viena, que no es precisamente la ciudad más barata de Europa, ese precio es muy bueno.</p>
-
     <p>Es un hostel con habitaciones privadas, bien situado y limpio. Exactamente lo que necesitas cuando viajas con amigos y quieres gastar lo mínimo en alojamiento para tener más presupuesto para el resto.</p>
-
     <h3>Consejos para encontrar hotel barato en Viena</h3>
-
     <ul>
       <li>Busca en el <strong>distrito 6 o 7</strong> (Mariahilf y Neubau) — bien comunicados con el centro y más económicos que los distritos 1 y 2.</li>
       <li>Los hostels con habitaciones privadas suelen ser la opción más barata para grupos de 2-3 personas.</li>
@@ -381,205 +241,100 @@
       <h3>Busca alojamiento barato en Viena</h3>
       <p>Hay buenas opciones por menos de 20€/noche si buscas con tiempo.</p>
       <div class="cta-btns">
-        <a href="https://www.booking.com/searchresults.es.html?ss=Viena%2C+Austria" target="_blank" rel="noopener" class="cta-btn">🏨 Ver alojamientos en Viena</a>
+        <a href="https://www.jdoqocy.com/click-101753979-15734352?url=https://www.booking.com/searchresults.es.html?ss=Viena%2C+Austria" target="_blank" rel="noopener" class="cta-btn">🏨 Ver alojamientos en Viena</a>
       </div>
     </div>
 
     <h2 id="tour">El tour en español: lo que nadie espera en Viena</h2>
-
     <p>El primer día, por la tarde, hicimos un tour guiado en español. Y aquí viene algo que no me esperaba: <strong>la cantidad de españoles que había</strong>. Éramos un grupo grande, todos españoles, en Viena, en la primera semana de febrero. No sé si es que somos muy viajeros o que nos gusta el frío más de lo que pensaba.</p>
-
     <p>El tour mereció mucho la pena para orientarse el primer día. En pocas horas te ubicas, entiendes la historia de la ciudad y sabes qué ver con más calma los días siguientes. Si vas por primera vez, te lo recomiendo.</p>
-
     <div class="info-box">
       <div class="info-box-title">💡 Free tours en Viena</div>
       <p>Hay free tours en español casi todos los días. Son gratuitos — pagas lo que quieras al final según lo que te haya parecido. Busca "free tour Viena español" y encontrarás varias opciones.</p>
     </div>
 
     <h2 id="lugares">Qué ver en Viena</h2>
-
     <p>Viena es una ciudad que no te da tregua. En tres días vimos mucho, pero se nos quedaron cosas pendientes. Esto es lo que visitamos nosotros:</p>
-
     <div class="lugares-grid">
-      <div class="lugar-card">
-        <div class="lugar-emoji">🎹</div>
-        <div class="lugar-name">Casa de Mozart</div>
-        <div class="lugar-desc">Donde vivió Mozart mientras componía Las Bodas de Fígaro. Muy interesante por dentro, aunque no dejan hacer fotos en el interior.</div>
-        <span class="lugar-paid">Entrada: ~12€</span>
-      </div>
-      <div class="lugar-card">
-        <div class="lugar-emoji">⛪</div>
-        <div class="lugar-name">Catedral de San Esteban</div>
-        <div class="lugar-desc">El símbolo de Viena. El tejado con el mosaico de colores es impresionante. Entrada gratuita a la nave principal.</div>
-        <span class="lugar-free">Gratis (nave)</span>
-      </div>
-      <div class="lugar-card">
-        <div class="lugar-emoji">🕰️</div>
-        <div class="lugar-name">Reloj Anker</div>
-        <div class="lugar-desc">A mediodía desfilan 12 figuras históricas al son de la música. Un espectáculo gratuito que vale la pena ver si coincides en el horario.</div>
-        <span class="lugar-free">Gratis</span>
-      </div>
-      <div class="lugar-card">
-        <div class="lugar-emoji">🏛️</div>
-        <div class="lugar-name">Palacio Belvedere</div>
-        <div class="lugar-desc">Uno de los palacios barrocos más bonitos de Europa. El jardín es gratuito — el museo interior tiene entrada de pago pero vale la pena.</div>
-        <span class="lugar-free">Jardín gratis</span>
-        <span class="lugar-paid"> Museo: ~16€</span>
-      </div>
-      <div class="lugar-card">
-        <div class="lugar-emoji">👑</div>
-        <div class="lugar-name">Palacio Schönbrunn</div>
-        <div class="lugar-desc">La residencia imperial. Los jardines son enormes y gratuitos. El interior tiene varios tipos de entrada según cuántas salas quieras ver.</div>
-        <span class="lugar-free">Jardines gratis</span>
-        <span class="lugar-paid"> Interior: desde 16€</span>
-      </div>
-      <div class="lugar-card">
-        <div class="lugar-emoji">🎭</div>
-        <div class="lugar-name">Ópera de Viena</div>
-        <div class="lugar-desc">Por fuera ya impresiona, pero de noche con la iluminación es otra cosa. Si quieres entrar, hay entradas de pie desde 3€.</div>
-        <span class="lugar-free">Exterior gratis</span>
-        <span class="lugar-paid"> Pie: desde 3€</span>
-      </div>
-      <div class="lugar-card">
-        <div class="lugar-emoji">🏰</div>
-        <div class="lugar-name">Palacio Hofburg</div>
-        <div class="lugar-desc">El antiguo palacio imperial en el centro de la ciudad. Una parte es visitable con entrada, pero el exterior ya justifica el paseo.</div>
-        <span class="lugar-free">Exterior gratis</span>
-      </div>
-      <div class="lugar-card">
-        <div class="lugar-emoji">☕</div>
-        <div class="lugar-name">Café Demel</div>
-        <div class="lugar-desc">Uno de los cafés históricos de Viena. Tomamos aquí el Sachertorte con el café Sacher. No es el original, pero la experiencia merece la pena.</div>
-        <span class="lugar-paid">Sachertorte + café ~12€</span>
-      </div>
+      <div class="lugar-card"><div class="lugar-emoji">🎹</div><div class="lugar-name">Casa de Mozart</div><div class="lugar-desc">Donde vivió Mozart mientras componía Las Bodas de Fígaro. Muy interesante por dentro, aunque no dejan hacer fotos en el interior.</div><span class="lugar-paid">Entrada: ~12€</span></div>
+      <div class="lugar-card"><div class="lugar-emoji">⛪</div><div class="lugar-name">Catedral de San Esteban</div><div class="lugar-desc">El símbolo de Viena. El tejado con el mosaico de colores es impresionante. Entrada gratuita a la nave principal.</div><span class="lugar-free">Gratis (nave)</span></div>
+      <div class="lugar-card"><div class="lugar-emoji">🕰️</div><div class="lugar-name">Reloj Anker</div><div class="lugar-desc">A mediodía desfilan 12 figuras históricas al son de la música. Un espectáculo gratuito que vale la pena ver si coincides en el horario.</div><span class="lugar-free">Gratis</span></div>
+      <div class="lugar-card"><div class="lugar-emoji">🏛️</div><div class="lugar-name">Palacio Belvedere</div><div class="lugar-desc">Uno de los palacios barrocos más bonitos de Europa. El jardín es gratuito — el museo interior tiene entrada de pago pero vale la pena.</div><span class="lugar-free">Jardín gratis</span><span class="lugar-paid"> Museo: ~16€</span></div>
+      <div class="lugar-card"><div class="lugar-emoji">👑</div><div class="lugar-name">Palacio Schönbrunn</div><div class="lugar-desc">La residencia imperial. Los jardines son enormes y gratuitos. El interior tiene varios tipos de entrada según cuántas salas quieras ver.</div><span class="lugar-free">Jardines gratis</span><span class="lugar-paid"> Interior: desde 16€</span></div>
+      <div class="lugar-card"><div class="lugar-emoji">🎭</div><div class="lugar-name">Ópera de Viena</div><div class="lugar-desc">Por fuera ya impresiona, pero de noche con la iluminación es otra cosa. Si quieres entrar, hay entradas de pie desde 3€.</div><span class="lugar-free">Exterior gratis</span><span class="lugar-paid"> Pie: desde 3€</span></div>
+      <div class="lugar-card"><div class="lugar-emoji">🏰</div><div class="lugar-name">Palacio Hofburg</div><div class="lugar-desc">El antiguo palacio imperial en el centro de la ciudad. Una parte es visitable con entrada, pero el exterior ya justifica el paseo.</div><span class="lugar-free">Exterior gratis</span></div>
+      <div class="lugar-card"><div class="lugar-emoji">☕</div><div class="lugar-name">Café Demel</div><div class="lugar-desc">Uno de los cafés históricos de Viena. Tomamos aquí el Sachertorte con el café Sacher. No es el original, pero la experiencia merece la pena.</div><span class="lugar-paid">Sachertorte + café ~12€</span></div>
     </div>
 
     <figure class="article-img">
       <img src="img/viena1.jpg" alt="Interior del Kunsthistorisches Museum de Viena">
       <figcaption>Interior del Kunsthistorisches Museum — entrada 21€, pero si te gusta el arte vale cada céntimo.</figcaption>
     </figure>
-
     <div class="img-grid">
-      <figure>
-        <img src="img/opera.jpg" alt="Ópera de Viena de noche">
-        <figcaption>La Ópera de noche — uno de mis amigos dijo "esto parece de película". Tenía razón.</figcaption>
-      </figure>
-      <figure>
-        <img src="img/schnitzel.jpg" alt="Wiener Schnitzel en Viena">
-        <figcaption>El Wiener Schnitzel — enorme, con ensalada de patata. El mejor que comí fue en un sitio que nos recomendaron dos españoles que viven allí.</figcaption>
-      </figure>
+      <figure><img src="img/opera.jpg" alt="Ópera de Viena de noche"><figcaption>La Ópera de noche — uno de mis amigos dijo "esto parece de película". Tenía razón.</figcaption></figure>
+      <figure><img src="img/schnitzel.jpg" alt="Wiener Schnitzel en Viena"><figcaption>El Wiener Schnitzel — enorme, con ensalada de patata. El mejor que comí fue en un sitio que nos recomendaron dos españoles que viven allí.</figcaption></figure>
     </div>
 
     <h2 id="comida">Qué comer en Viena (y cómo no arruinarte)</h2>
-
     <p>La gastronomía vienesa es buena, pero puede salir cara si no sabes dónde ir. El plato que más me sorprendió fue el <strong>Wiener Schnitzel</strong> — escalope de ternera empanado, enorme, con ensalada de patata. Eso sí, hay una diferencia enorme entre el precio según dónde lo pidas.</p>
-
     <div class="story-box">
       <div class="story-box-label">📖 Lo que pasó en el metro</div>
       <p>Íbamos en metro el segundo día cuando un par de tíos escucharon que hablábamos en español y se acercaron. Llevaban dos años viviendo en Viena. Nos dijeron directamente: "No comáis en el centro, los precios son una trampa para turistas." Nos recomendaron un par de sitios alejados del primer distrito donde el Schnitzel sale por la mitad de precio y es igual de bueno. Ese tipo de información no la encuentras en ninguna guía.</p>
     </div>
-
     <p>El consejo funciona en casi cualquier ciudad europea: <strong>alejarse una o dos calles del centro turístico ya reduce el precio a la mitad</strong> en muchos restaurantes. En Viena especialmente, el primer distrito (el Innere Stadt) tiene los precios más inflados de toda la ciudad.</p>
-
     <h3>El Sachertorte: dónde tomarlo sin pagar de más</h3>
-
     <p>El Sachertorte es la tarta de chocolate más famosa de Austria. La original se sirve en el <strong>Hotel Sacher</strong>, pero tiene lista de espera y los precios son bastante altos. Nosotros lo tomamos en el <strong>Café Demel</strong>, que tiene su propia versión histórica — hay incluso una disputa legal de décadas entre Sacher y Demel sobre cuál es la auténtica. El resultado: igual de bueno, con menos espera y algo más económico.</p>
-
     <div class="info-box">
       <div class="info-box-title">☕ El café Sacher</div>
       <p>Pide el "Einspänner" — café con nata montada — junto al Sachertorte. Es la combinación clásica vienesa y cuesta menos que un café con leche en cualquier aeropuerto español.</p>
     </div>
 
     <h2 id="camiseta">La camiseta que no pude comprar</h2>
-
     <p>Tengo una costumbre cuando viajo: comprarme la camiseta del equipo de fútbol de la ciudad. En Londres me llevé una, en Turín la del Torino FC. Viena tenía que ser la del <strong>FK Austria Wien</strong> — una camiseta morada preciosa, de las más bonitas que he visto.</p>
-
     <p>El problema es que Viena no es una ciudad futbolera. Preguntamos, buscamos, dimos vueltas — encontramos una tienda oficial pero estaba cerrada. No hubo manera. Sin tiempo para ir hasta el estadio, la camiseta se quedó en Viena.</p>
-
     <p>Queda pendiente para la próxima vez. Porque habrá próxima vez.</p>
-
     <div class="warning-box">
       <div class="warning-box-title">⚽ Si quieres la camiseta del Austria Wien</div>
       <p>La tienda oficial está en el estadio Franz Horr (Favoriten, distrito 10). Si vas a por la camiseta específicamente, comprueba el horario antes de ir — no siempre está abierta entre semana.</p>
     </div>
 
     <h2 id="mochila">El truco de la mochila: cómo caber en equipaje de mano en invierno</h2>
-
     <p>Este es uno de los consejos más prácticos que puedo darte, especialmente para viajes de invierno donde la ropa abulla más.</p>
-
     <p>Yo llevo una mochila diseñada <strong>exactamente con las medidas que permiten las aerolíneas de bajo coste</strong> como equipaje de mano — normalmente 40x20x25 cm para Ryanair o similares. No un centímetro más. Parece poco, pero con organización cabe perfectamente la ropa de tres días de invierno: abrigo aparte (que llevas puesto en el avión), un jersey grueso, dos camisetas, ropa interior, neceser.</p>
-
     <p>El ahorro es real: <strong>entre 30 y 60€ por trayecto</strong> solo en no facturar maleta. En un viaje de ida y vuelta, eso es hasta 120€ que se quedan en tu bolsillo.</p>
-
     <div class="info-box">
       <div class="info-box-title">🎒 Truco extra para invierno</div>
       <p>Lleva el abrigo y el jersey más grueso puesto en el avión — no ocupan nada en la mochila y puedes ir con todo lo que necesitas sin problemas. Parece obvio pero mucha gente no lo hace.</p>
     </div>
 
     <h2 id="presupuesto">Presupuesto real: cuánto gasté en Viena</h2>
-
     <p>Aquí está el desglose completo por persona, sin redondear nada:</p>
-
     <div class="budget-table">
       <div class="budget-header">💰 Presupuesto real — 3 días en Viena (por persona)</div>
-      <div class="budget-row">
-        <div class="budget-cat">✈️ Vuelo BCN-VIE ida y vuelta</div>
-        <div class="budget-amount">93€</div>
-      </div>
+      <div class="budget-row"><div class="budget-cat">✈️ Vuelo BCN-VIE ida y vuelta</div><div class="budget-amount">93€</div></div>
       <div class="budget-bar-wrap"><div class="budget-bar"><div class="budget-bar-fill" style="width:35%"></div></div></div>
-      <div class="budget-row">
-        <div class="budget-cat">🛏️ Hotel A&T (3 noches)</div>
-        <div class="budget-amount">48€</div>
-      </div>
+      <div class="budget-row"><div class="budget-cat">🛏️ Hotel A&T (3 noches)</div><div class="budget-amount">48€</div></div>
       <div class="budget-bar-wrap"><div class="budget-bar"><div class="budget-bar-fill" style="width:18%"></div></div></div>
-      <div class="budget-row">
-        <div class="budget-cat">🍽️ Comida y restaurantes</div>
-        <div class="budget-amount">~110€</div>
-      </div>
+      <div class="budget-row"><div class="budget-cat">🍽️ Comida y restaurantes</div><div class="budget-amount">~110€</div></div>
       <div class="budget-bar-wrap"><div class="budget-bar"><div class="budget-bar-fill" style="width:42%"></div></div></div>
-      <div class="budget-row">
-        <div class="budget-cat">🚇 Transporte metro</div>
-        <div class="budget-amount">~15€</div>
-      </div>
+      <div class="budget-row"><div class="budget-cat">🚇 Transporte metro</div><div class="budget-amount">~15€</div></div>
       <div class="budget-bar-wrap"><div class="budget-bar"><div class="budget-bar-fill" style="width:6%"></div></div></div>
-      <div class="budget-row total">
-        <div class="budget-cat" style="font-weight:700">🏆 TOTAL</div>
-        <div class="budget-amount total-amount">~266€</div>
-      </div>
-      <div class="budget-note">* Sin contar entradas a museos ni al interior de los palacios, que son opcionales. El tour guiado del primer día no está incluido — si es free tour, pagas lo que quieras.</div>
+      <div class="budget-row total"><div class="budget-cat" style="font-weight:700">🏆 TOTAL</div><div class="budget-amount total-amount">~266€</div></div>
+      <div class="budget-note">* Sin contar entradas a museos ni al interior de los palacios, que son opcionales.</div>
     </div>
 
     <h2 id="consejos">Mis 5 trucos para viajar barato a Viena</h2>
-
     <div class="tips-list">
-      <div class="tip-item">
-        <div class="tip-num">1</div>
-        <div class="tip-text"><strong>Vé en temporada baja.</strong> Febrero, noviembre o marzo son los meses más baratos. Los precios de vuelo y hotel bajan un 30-40% respecto al verano y hay mucha menos gente en los sitios más visitados.</div>
-      </div>
-      <div class="tip-item">
-        <div class="tip-num">2</div>
-        <div class="tip-text"><strong>Combina aerolíneas ida y vuelta.</strong> Nosotros fuimos con Wizz Air y volvimos con Vueling. Comparar precios entre compañías distintas para cada trayecto por separado es uno de los trucos que más dinero ahorra.</div>
-      </div>
-      <div class="tip-item">
-        <div class="tip-num">3</div>
-        <div class="tip-text"><strong>Aléjate del primer distrito para comer.</strong> El Innere Stadt es la zona más cara de Viena. A dos calles de los sitios turísticos los precios cambian completamente. Los locales lo saben — nosotros lo aprendimos gracias a dos españoles en el metro.</div>
-      </div>
-      <div class="tip-item">
-        <div class="tip-num">4</div>
-        <div class="tip-text"><strong>Aprovecha los exteriores gratuitos.</strong> Los jardines del Schönbrunn y el Belvedere, la Ópera de noche, el Reloj Anker, la Catedral de San Esteban — todo gratis. Viena tiene mucho que ver sin pagar entrada.</div>
-      </div>
-      <div class="tip-item">
-        <div class="tip-num">5</div>
-        <div class="tip-text"><strong>Lleva una mochila de medidas exactas de aerolínea.</strong> Sobre todo en invierno, cuando la ropa abulla más. Llevar el abrigo puesto en el avión y organizarte bien el equipaje te ahorra entre 60 y 120€ en facturación que puedes gastarte en el viaje.</div>
-      </div>
+      <div class="tip-item"><div class="tip-num">1</div><div class="tip-text"><strong>Vé en temporada baja.</strong> Febrero, noviembre o marzo son los meses más baratos. Los precios de vuelo y hotel bajan un 30-40% respecto al verano y hay mucha menos gente en los sitios más visitados.</div></div>
+      <div class="tip-item"><div class="tip-num">2</div><div class="tip-text"><strong>Combina aerolíneas ida y vuelta.</strong> Nosotros fuimos con Wizz Air y volvimos con Vueling. Comparar precios entre compañías distintas para cada trayecto por separado es uno de los trucos que más dinero ahorra.</div></div>
+      <div class="tip-item"><div class="tip-num">3</div><div class="tip-text"><strong>Aléjate del primer distrito para comer.</strong> El Innere Stadt es la zona más cara de Viena. A dos calles de los sitios turísticos los precios cambian completamente. Los locales lo saben — nosotros lo aprendimos gracias a dos españoles en el metro.</div></div>
+      <div class="tip-item"><div class="tip-num">4</div><div class="tip-text"><strong>Aprovecha los exteriores gratuitos.</strong> Los jardines del Schönbrunn y el Belvedere, la Ópera de noche, el Reloj Anker, la Catedral de San Esteban — todo gratis. Viena tiene mucho que ver sin pagar entrada.</div></div>
+      <div class="tip-item"><div class="tip-num">5</div><div class="tip-text"><strong>Lleva una mochila de medidas exactas de aerolínea.</strong> Sobre todo en invierno, cuando la ropa abulla más. Llevar el abrigo puesto en el avión y organizarte bien el equipaje te ahorra entre 60 y 120€ en facturación que puedes gastarte en el viaje.</div></div>
     </div>
 
     <h2 id="merece">¿Merece la pena Viena con poco presupuesto?</h2>
-
     <p>Viena tiene fama de ciudad cara, y en parte es verdad — si te quedas en el centro, comes en restaurantes turísticos y entras a todos los museos, puedes gastarte el doble de lo que gasté yo. Pero si viajas con cabeza, la ciudad es perfectamente asequible.</p>
-
     <p>La arquitectura, los cafés, los palacios, la historia — todo eso está ahí y gran parte es gratuito o muy barato. El Sachertorte en el Demel, el Wiener Schnitzel en un sitio que te recomiende alguien que vive allí, el reloj Anker a mediodía con las figuras desfilando. Son cosas que no cuestan nada o casi nada y que te quedas grabadas.</p>
-
     <p>Por menos de 270€ desde Barcelona, tres días en Viena en invierno. Difícil encontrar una ciudad con tanto nivel a ese precio.</p>
 
     <div class="cta-afiliado">
@@ -587,7 +342,7 @@
       <p>Compara vuelos y busca el hotel con tiempo — en temporada baja los precios son muy buenos si reservas con 3-4 semanas de antelación.</p>
       <div class="cta-btns">
         <a href="https://www.skyscanner.es/vuelos/bcn/vie/" target="_blank" rel="noopener" class="cta-btn">✈️ Buscar vuelos a Viena</a>
-        <a href="https://www.booking.com/searchresults.es.html?ss=Viena%2C+Austria" target="_blank" rel="noopener" class="cta-btn-secondary">🏨 Ver hoteles</a>
+        <a href="https://www.jdoqocy.com/click-101753979-15734352?url=https://www.booking.com/searchresults.es.html?ss=Viena%2C+Austria" target="_blank" rel="noopener" class="cta-btn-secondary">🏨 Ver hoteles</a>
       </div>
     </div>
 
@@ -602,7 +357,6 @@
   </article>
 
   <aside class="article-sidebar">
-
     <div class="sidebar-box">
       <div class="sidebar-title">📋 En este artículo</div>
       <ul class="toc-list">
@@ -618,7 +372,6 @@
         <li><a href="#merece">🏆 ¿Merece la pena?</a></li>
       </ul>
     </div>
-
     <div class="sidebar-box">
       <div class="sidebar-title">💰 Resumen de gastos</div>
       <div class="sidebar-budget-item"><span>✈️ Vuelo i/v</span><span>93€</span></div>
@@ -627,12 +380,10 @@
       <div class="sidebar-budget-item"><span>🚇 Transporte</span><span>~15€</span></div>
       <div class="sidebar-budget-item"><span>🏆 Total</span><span>~266€</span></div>
     </div>
-
     <div class="sidebar-cta">
       <p>Busca los vuelos más baratos a Viena ahora mismo</p>
       <a href="https://www.skyscanner.es/vuelos/bcn/vie/" target="_blank" rel="noopener" class="cta-btn">✈️ Buscar vuelos</a>
     </div>
-
     <div class="sidebar-box">
       <div class="sidebar-title">🗓️ Info útil</div>
       <div style="font-size:0.85rem;color:#374151;line-height:1.7">
@@ -643,7 +394,6 @@
         <p style="margin-bottom:0"><strong>Duración ideal:</strong> 3-4 días</p>
       </div>
     </div>
-
     <div class="sidebar-box">
       <div class="sidebar-title">📖 También te puede interesar</div>
       <a href="viajar-barato-turin.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;padding:10px;border-radius:10px;transition:background 0.2s" onmouseover="this.style.background='#f5f0e8'" onmouseout="this.style.background='transparent'">
@@ -654,7 +404,6 @@
         </div>
       </a>
     </div>
-
   </aside>
 </div>
 
@@ -667,6 +416,5 @@
     <a href="contacto.html">Contacto</a>
   </div>
 </footer>
-
 </body>
 </html>
