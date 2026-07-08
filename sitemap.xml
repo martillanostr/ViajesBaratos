@@ -2,21 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://viajasbarato.es/</loc>
+    <lastmod>2026-07-04</lastmod>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://viajasbarato.es/viajar-barato-turin.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://viajasbarato.es/viajar-barato-viena.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://viajasbarato.es/viajar-barato-londres.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://viajasbarato.es/viajar-barato-budapest.html</loc>
+    <lastmod>2026-07-04</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://viajasbarato.es/como-encontrar-vuelos-baratos.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://viajasbarato.es/sobre-nosotros.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://viajasbarato.es/afiliados.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <priority>0.4</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
     <loc>https://viajasbarato.es/privacidad.html</loc>
+    <lastmod>2026-05-25</lastmod>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
   </url>
   <url>
     <loc>https://viajasbarato.es/aviso-legal.html</loc>
+    <lastmod>2026-05-25</lastmod>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
   </url>
   <url>
     <loc>https://viajasbarato.es/contacto.html</loc>
+    <lastmod>2026-05-25</lastmod>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
   </url>
