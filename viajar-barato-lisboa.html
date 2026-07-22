@@ -121,6 +121,13 @@
     .cta-btn-secondary:hover { background: rgba(255,255,255,0.2); }
 
     .lugares-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
+
+    .compare-table { width: 100%; border-collapse: collapse; margin: 24px 0; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(26,26,46,0.08); font-size: 0.9rem; }
+    .compare-table th { background: var(--ink); color: white; text-align: left; padding: 12px 16px; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 0.85rem; }
+    .compare-table td { padding: 12px 16px; border-bottom: 1px solid rgba(26,26,46,0.06); color: #374151; vertical-align: top; }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table td:first-child { font-weight: 700; color: var(--ink); white-space: nowrap; }
+    .compare-table tr:nth-child(even) { background: rgba(244,166,35,0.04); }
     .lugar-card { background: white; border-radius: 16px; padding: 18px; border: 1px solid rgba(26,26,46,0.06); transition: all 0.2s; }
     .lugar-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(26,26,46,0.08); }
     .lugar-emoji { font-size: 1.5rem; margin-bottom: 8px; }
@@ -225,6 +232,11 @@
       <p>A diferencia de Praga o Budapest, Portugal usa el euro, así que no hay que preocuparse por conversiones ni comisiones de cambio de moneda. Lo que sí cambia es el idioma (portugués) y el ritmo — Lisboa se vive despacio, entre cuestas y miradores, no es una ciudad para correr.</p>
     </div>
 
+    <div class="info-box">
+      <div class="info-box-title">✅ Resumen rápido</div>
+      <p>✈️ Vuelo desde 45€ · 🛏️ Hostel desde 20€/noche · 🚋 Pase 24h a 7,25€ · 🥐 Pastel de nata a 1,20€ · 💰 3 días desde ~180€ · 🗓️ Mejor época: octubre-febrero</p>
+    </div>
+
     <h2 id="vuelos">Vuelos baratos a Lisboa desde España</h2>
 
     <p>Lisboa tiene un único aeropuerto, el <strong>Aeropuerto Humberto Delgado (LIS)</strong>, con muy buena conexión desde España — es de los trayectos más cortos y baratos que puedes encontrar para salir del país.</p>
@@ -248,17 +260,17 @@
       </div>
     </div>
 
-    <h2 id="hotel">Dónde dormir barato en Lisboa</h2>
+    <h2 id="hotel">Barrios: cuál elegir según lo que busques</h2>
 
     <p>Lisboa tiene una de las mejores relaciones calidad-precio de Europa occidental en alojamiento. Puedes encontrar hostels con cama en dormitorio compartido desde <strong>18-22€/noche</strong> y habitaciones privadas desde <strong>35-40€/noche</strong>, incluso en zonas bien situadas.</p>
 
-    <h3>Los mejores barrios donde alojarse</h3>
-    <ul>
-      <li><strong>Baixa y Chiado</strong> — el centro comercial e histórico, todo a pie, buena base para moverte sin depender del transporte.</li>
-      <li><strong>Alfama</strong> — el barrio más pintoresco, callejuelas estrechas y fado en directo, algo más caro por su encanto.</li>
-      <li><strong>Príncipe Real y Bairro Alto</strong> — ambiente joven, buena vida nocturna, precios razonables y cerca de los principales miradores.</li>
-      <li><strong>Graça y Anjos</strong> — más residencial y notablemente más barato, a 10-15 minutos a pie o en tranvía del centro.</li>
-    </ul>
+    <table class="compare-table">
+      <tr><th>Barrio</th><th>Ambiente</th><th>Precio</th><th>Ideal para</th></tr>
+      <tr><td>Baixa y Chiado</td><td>Comercial, céntrico</td><td>Medio-alto</td><td>No depender del transporte</td></tr>
+      <tr><td>Alfama</td><td>Pintoresco, fado en vivo</td><td>Alto</td><td>Vivir el ambiente más típico</td></tr>
+      <tr><td>Príncipe Real / Bairro Alto</td><td>Joven, vida nocturna</td><td>Medio</td><td>Salir de noche sin desplazarte</td></tr>
+      <tr><td>Graça y Anjos</td><td>Residencial, auténtico</td><td>Bajo</td><td>Ajustar presupuesto</td></tr>
+    </table>
 
     <div class="info-box">
       <div class="info-box-title">💡 Truco: mira zona de Anjos e Intendente</div>
@@ -438,7 +450,7 @@
     </div>
 
     <div class="cta-afiliado">
-      <h3>¿Te animas a ir a Lisboa?</h3>
+      <h3>Lisboa no espera</h3>
       <p>Busca vuelos con Vueling o easyJet y reserva el hostel con tiempo, sobre todo si viajas en verano. Con 3 días tienes suficiente para ver lo esencial.</p>
       <div class="cta-btns">
         <a href="https://www.skyscanner.es/vuelos/bcn/lis/" target="_blank" rel="noopener" class="cta-btn">✈️ Buscar vuelos</a>
