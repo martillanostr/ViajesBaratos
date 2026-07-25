@@ -2,32 +2,75 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto – ViajesBarato.es</title>
+  <title>Contacto — ViajasBarato.es</title>
+  <meta name="description" content="Contacta con ViajasBarato.es para consultas, sugerencias o ejercer tus derechos de protección de datos.">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5543799513480585"
+       crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TK6N66L2TB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TK6N66L2TB');
+  </script>
   <style>
-    body { font-family: Georgia, serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.7; }
-    h1 { font-size: 1.8em; border-bottom: 2px solid #222; padding-bottom: 10px; }
-    a { color: #222; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'DM Sans', sans-serif; background: #f5f0e8; color: #1a1a2e; }
+    nav {
+      background: rgba(245,240,232,0.95); backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(26,26,46,0.08); padding: 0 24px;
+      height: 64px; display: flex; align-items: center; justify-content: space-between;
+      position: sticky; top: 0; z-index: 100;
+    }
+    .logo { display: flex; align-items: center; gap: 8px; text-decoration: none; }
+    .logo-icon { width: 36px; height: 36px; background: #1a1a2e; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; }
+    .logo-text { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: #1a1a2e; font-weight: 700; }
+    .logo-text span { color: #f4a623; }
+    .content { max-width: 600px; margin: 0 auto; padding: 64px 24px 80px; text-align: center; }
+    .content h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 2.8rem); font-weight: 900; margin-bottom: 16px; }
+    .content p { font-size: 1rem; line-height: 1.8; color: #4b5563; margin-bottom: 24px; }
+    .contact-box { background: white; border-radius: 20px; padding: 36px; box-shadow: 0 4px 16px rgba(26,26,46,0.06); margin-top: 24px; }
+    .contact-box a { color: #f4a623; font-weight: 700; font-size: 1.1rem; text-decoration: none; }
+    .contact-box a:hover { text-decoration: underline; }
+    .contact-note { font-size: 0.85rem; color: #6b7280; margin-top: 20px; }
+    footer { background: #0f0f1a; color: rgba(255,255,255,0.4); padding: 32px 24px; text-align: center; font-size: 0.85rem; }
+    footer a { color: rgba(255,255,255,0.4); text-decoration: none; margin: 0 10px; }
+    footer a:hover { color: #f4a623; }
   </style>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5BW7VFE0MT"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-5BW7VFE0MT');
-    </script>
 </head>
 <body>
+
+<nav>
+  <a href="index.html" class="logo">
+    <div class="logo-icon">✈️</div>
+    <span class="logo-text">Viajas<span>Barato</span></span>
+  </a>
+  <a href="index.html" style="font-size:0.875rem;color:#6b7280;text-decoration:none;font-weight:500">← Volver al inicio</a>
+</nav>
+
+<div class="content">
   <h1>Contacto</h1>
-  <p>Para cualquier consulta, sugerencia o ejercicio de derechos relacionados con la protección de datos, puedes ponerte en contacto con el titular de esta web:</p>
+  <p>¿Tienes alguna pregunta, sugerencia o quieres ejercer tus derechos de protección de datos? Escríbeme y te respondo en cuanto pueda.</p>
 
-  <p><strong>Titular:</strong> Martí Llanos Planas<br>
-  <strong>Web:</strong> viajasbarato.es</p>
+  <div class="contact-box">
+    <p style="margin-bottom:8px;font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#f4a623">Email</p>
+    <a href="mailto:martillanos.tr@gmail.com">martillanos.tr@gmail.com</a>
+    <p class="contact-note">Respondo en un plazo máximo de 30 días, normalmente mucho antes.</p>
+  </div>
+</div>
 
-  <p><strong>Email:</strong> <a href="mailto:martillanos.tr@gmail.com">martillanos.tr@gmail.com</a></p>
-  <p>Responderemos en un plazo máximo de 30 días.</p>
+<footer>
+  <p>© 2026 ViajasBarato.es</p>
+  <div style="margin-top:10px">
+    <a href="privacidad.html">Privacidad</a>
+    <a href="aviso-legal.html">Aviso Legal</a>
+    <a href="afiliados.html">Política de Afiliados</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+</footer>
 
-  <p><a href="index.html">← Volver al inicio</a></p>
 </body>
 </html>
