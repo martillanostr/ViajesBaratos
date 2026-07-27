@@ -12,8 +12,6 @@
   <meta property="og:url" content="https://viajasbarato.es/">
   <meta property="og:image" content="https://viajasbarato.es/img/viena1.jpg">
   <link rel="canonical" href="https://viajasbarato.es/">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5543799513480585"
-       crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest" onload="lucide.createIcons()"></script>
   <style>
@@ -364,22 +362,29 @@
       .cta-form { flex-direction: column; }
     }
   </style>
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TK6N66L2TB"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-TK6N66L2TB');
-  </script>
-  <!-- Travelpayouts -->
-  <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1">
-    (function () {
-      var script = document.createElement("script");
-      script.async = 1;
-      script.src = 'https://tp-em.com/NTMxMDEz.js?t=531013';
-      document.head.appendChild(script);
-    })();
+    function cargarScriptsConsentimiento() {
+      var ga = document.createElement('script');
+      ga.async = true;
+      ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-TK6N66L2TB';
+      document.head.appendChild(ga);
+      gtag('js', new Date());
+      gtag('config', 'G-TK6N66L2TB');
+      var ads = document.createElement('script');
+      ads.async = true;
+      ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5543799513480585';
+      ads.crossOrigin = 'anonymous';
+      document.head.appendChild(ads);
+      var tp = document.createElement('script');
+      tp.async = true;
+      tp.src = 'https://tp-em.com/NTMxMDEz.js?t=531013';
+      document.head.appendChild(tp);
+    }
+    if (localStorage.getItem('cookies-aceptadas') === 'true') {
+      cargarScriptsConsentimiento();
+    }
   </script>
 </head>
 <body>
@@ -1173,6 +1178,7 @@
   function aceptarCookies() {
     localStorage.setItem('cookies-aceptadas', 'true');
     document.getElementById('cookie-banner').style.display = 'none';
+    if (typeof cargarScriptsConsentimiento === 'function') cargarScriptsConsentimiento();
   }
   function rechazarCookies() {
     localStorage.setItem('cookies-aceptadas', 'false');

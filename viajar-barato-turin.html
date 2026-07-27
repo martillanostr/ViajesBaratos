@@ -24,23 +24,30 @@
     "description": "Presupuesto real de un viaje a Turín: vuelos desde 42€, hotel desde 28€/noche y el truco de TheFork para comer barato en Italia."
   }
   </script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5543799513480585"
-       crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TK6N66L2TB"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-TK6N66L2TB');
-  </script>
-  <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1">
-    (function () {
-      var script = document.createElement("script");
-      script.async = 1;
-      script.src = 'https://tp-em.com/NTMxMDEz.js?t=531013';
-      document.head.appendChild(script);
-    })();
+    function cargarScriptsConsentimiento() {
+      var ga = document.createElement('script');
+      ga.async = true;
+      ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-TK6N66L2TB';
+      document.head.appendChild(ga);
+      gtag('js', new Date());
+      gtag('config', 'G-TK6N66L2TB');
+      var ads = document.createElement('script');
+      ads.async = true;
+      ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5543799513480585';
+      ads.crossOrigin = 'anonymous';
+      document.head.appendChild(ads);
+      var tp = document.createElement('script');
+      tp.async = true;
+      tp.src = 'https://tp-em.com/NTMxMDEz.js?t=531013';
+      document.head.appendChild(tp);
+    }
+    if (localStorage.getItem('cookies-aceptadas') === 'true') {
+      cargarScriptsConsentimiento();
+    }
   </script>
   <style>
     :root {
@@ -434,5 +441,27 @@
     <a href="contacto.html">Contacto</a>
   </div>
 </footer>
+<div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#1a1a2e;color:white;padding:16px 24px;z-index:9999;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;box-shadow:0 -4px 20px rgba(0,0,0,0.2)">
+  <p style="font-size:0.875rem;margin:0;max-width:700px;opacity:0.9">🍪 Usamos cookies propias y de terceros (Google Analytics, AdSense) para mejorar tu experiencia y mostrarte publicidad relevante. <a href="privacidad.html" style="color:#f4a623;text-decoration:underline">Más información</a></p>
+  <div style="display:flex;gap:10px;flex-shrink:0">
+    <button onclick="rechazarCookies()" style="background:transparent;border:1px solid rgba(255,255,255,0.3);color:white;padding:8px 16px;border-radius:8px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:0.85rem">Rechazar</button>
+    <button onclick="aceptarCookies()" style="background:#f4a623;border:none;color:#1a1a2e;padding:8px 20px;border-radius:8px;cursor:pointer;font-family:'DM Sans',sans-serif;font-weight:700;font-size:0.85rem">Aceptar</button>
+  </div>
+</div>
+<script>
+  if (!localStorage.getItem('cookies-aceptadas')) {
+    document.getElementById('cookie-banner').style.display = 'flex';
+  }
+  function aceptarCookies() {
+    localStorage.setItem('cookies-aceptadas', 'true');
+    document.getElementById('cookie-banner').style.display = 'none';
+    if (typeof cargarScriptsConsentimiento === 'function') cargarScriptsConsentimiento();
+  }
+  function rechazarCookies() {
+    localStorage.setItem('cookies-aceptadas', 'false');
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+</script>
+
 </body>
 </html>
